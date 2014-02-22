@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>B0888F0C-48ED-42F2-ABBA-547E0C16351D</string>
+	<string>12B29167-AF47-423B-8508-DC3C7C28FAB5</string>
 	<key>IDESourceControlProjectName</key>
 	<string>WedingProj</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -13,15 +13,11 @@
 		<key>9928194A-90AA-4EDE-9BFE-993F38292022</key>
 		<string>ssh://Micronixs-MacBook-Pro.local/git/WedingProj.git</string>
 	</dict>
-	<key>IDESourceControlProjectPath</key>
-	<string>WedingProj.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>9928194A-90AA-4EDE-9BFE-993F38292022</key>
-		<string>../..</string>
+		<string>../../../../WedingProj</string>
 	</dict>
-	<key>IDESourceControlProjectURL</key>
-	<string>ssh://Micronixs-MacBook-Pro.local/git/WedingProj.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
