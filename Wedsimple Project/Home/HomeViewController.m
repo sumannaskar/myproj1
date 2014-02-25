@@ -72,6 +72,7 @@
     NSLog(@"suman");
     NSLog(@"suman");
     NSLog(@"suman");
+    NSLog(@"demo");
 }
 - (IBAction)vendoractn:(UIButton *)sender
 {
