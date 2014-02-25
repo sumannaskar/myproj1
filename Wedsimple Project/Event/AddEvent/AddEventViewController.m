@@ -27,7 +27,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    scroll.contentSize=CGSizeMake(320, 500);
+    scroll.contentSize=CGSizeMake(320, 600);
     _pickerVw.dataSource=self;
     _pickerVw.delegate=self;
     _pickerVw.showsSelectionIndicator=YES;
