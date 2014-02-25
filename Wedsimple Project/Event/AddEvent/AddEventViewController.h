@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AddEventViewController : UIViewController<UIPickerViewDataSource,UIPickerViewDelegate>
+@interface AddEventViewController : UIViewController<UIPickerViewDataSource,UIPickerViewDelegate,UITextFieldDelegate>
 {
     NSArray *pkarray;
     IBOutlet UIScrollView *scroll;
@@ -19,6 +19,8 @@
 @property (strong, nonatomic) IBOutlet UITextField *datetxt;
 
 @property (strong, nonatomic) IBOutlet UITextField *dateendtxt;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *donedatebtn;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *canceldatebtn;
 
 @property (retain, nonatomic) IBOutlet UIView *respondingView;
 - (IBAction)done:(id)sender;

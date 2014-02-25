@@ -27,6 +27,14 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    
+    _datetxt.delegate=self;
+     _dateendtxt.delegate=self;
+    _datetxt.tag=1;
+    _dateendtxt.tag=2;
+    
+    
     scroll.contentSize=CGSizeMake(320, 500);
     _pickerVw.dataSource=self;
     _pickerVw.delegate=self;
@@ -38,8 +46,20 @@
     [_datepickerVW setDate:[NSDate date]];
     
     pkarray=[[NSArray alloc]initWithObjects:@"Formal",@"Casual", nil];
+    _donedatebtn.tag=1;
+    
 }
-
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    if (textField.tag==1) {
+        _donedatebtn.tag=1;
+        _canceldatebtn.tag=1;
+    }
+    if (textField.tag==2) {
+        _donedatebtn.tag=2;
+        _canceldatebtn.tag=2;
+    }
+}
 #pragma mark -
 #pragma mark - picker view delegates
 
@@ -113,22 +133,35 @@
 
 - (IBAction)donedate:(id)sender
 {
-    
-    _datetxt.text=[self formatDate:_datepickerVW.date];
-   // _datetxt.text=[NSString stringWithFormat:@"%@",_datepickerVW.date];
-    
-    [_datetxt resignFirstResponder];
+
+    if (_donedatebtn.tag==1) {
+        _datetxt.text=[self formatDate:_datepickerVW.date];
+        // _datetxt.text=[NSString stringWithFormat:@"%@",_datepickerVW.date];
+        
+        [_datetxt resignFirstResponder];
+    }
+    else
+    {
     
      _dateendtxt.text=[self formatDate:_datepickerVW.date];
      [_dateendtxt resignFirstResponder];
-    [_dateendtxt resignFirstResponder];
+   // [_dateendtxt resignFirstResponder];
+    }
 
 }
 - (IBAction)canceldate:(UIBarButtonItem *)sender
 {
-    _datetxt.text=@"";
-    [_datetxt resignFirstResponder];
-}
+    if (_canceldatebtn.tag==1)
+    {
+        _datetxt.text=@"";
+        [_datetxt resignFirstResponder];
+    }
+    else
+    {
+        _dateendtxt.text=@"";
+        [_dateendtxt resignFirstResponder];
+    }
+   }
 - (NSString *)formatDate:(NSDate *)date
 {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
