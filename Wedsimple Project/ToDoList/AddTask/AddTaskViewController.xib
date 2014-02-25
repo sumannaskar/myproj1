@@ -6,10 +6,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddTaskViewController">
             <connections>
+                <outlet property="cancelbtn" destination="fA2-Q0-Fgg" id="7ak-hT-FKD"/>
                 <outlet property="categorytxt" destination="KBq-9R-3c8" id="HT7-Vz-yeV"/>
                 <outlet property="datepickerVW" destination="Txy-hA-J9H" id="GDR-qQ-Dfd"/>
                 <outlet property="datepickerView" destination="gEC-II-bub" id="X5J-1c-Pjz"/>
                 <outlet property="datetxt" destination="W9P-oV-oKG" id="4gD-Cb-AIV"/>
+                <outlet property="donebtn" destination="mF2-gf-j29" id="vrc-6C-eV2"/>
                 <outlet property="eventtxt" destination="OQz-Tm-ofD" id="0jY-Jn-ISP"/>
                 <outlet property="informationtxt" destination="9gY-Dt-f0l" id="OhL-zl-Gfk"/>
                 <outlet property="nametxt" destination="wRc-Jm-sXQ" id="Vwe-g0-ImO"/>

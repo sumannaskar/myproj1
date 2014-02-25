@@ -42,11 +42,26 @@
     
     
     
+    _eventtxt.tag=2;
+    _vendortxt.tag=3;
+    _statustxt.tag=4;
+    
+    
     scroll.contentSize=CGSizeMake(320, 500);
     
     pkarray=[[NSArray alloc]initWithObjects:@"Category1",@"Category2",@"Category3",@"Category4",@"Category5",@"Category6", nil];
+    
+    eventarray=[[NSArray alloc]initWithObjects:@"Event1",@"Event2",@"Event3",@"Event4",@"Event5",@"Event6", nil];
 }
 
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    if (textField.tag==2) {
+        _pickerVw.tag=2;
+        _donebtn.tag=2;
+        _cancelbtn.tag=2;
+    }
+}
 #pragma mark -
 #pragma mark - picker view delegates
 
@@ -61,7 +76,9 @@
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
     NSInteger rowCount;
-    
+    if (_pickerVw.tag==2) {
+        rowCount=[eventarray count];
+    }
     rowCount=[pkarray count];
     return rowCount;
 }
@@ -72,27 +89,40 @@
 
 {
     // return [location objectAtIndex:row];
+    if (_pickerVw.tag==2) {
+       return [eventarray objectAtIndex:row];
+    }
     return [pkarray objectAtIndex:row];
 }
 
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
-    
+
+    if (_pickerVw.tag==2) {
+        _eventtxt.text=[eventarray objectAtIndex:row];
+    }
     _categorytxt.text=[pkarray objectAtIndex:row];
         
 }
 
 - (IBAction)done:(id)sender
 {
-    
+    if (_donebtn.tag==2) {
+        if (!(_eventtxt.text.length>0)) {
+            
+            _eventtxt.text=[eventarray objectAtIndex:0];
+            
+        }
+        
+        [_eventtxt resignFirstResponder];
+
+    }
     if (!(_categorytxt.text.length>0)) {
-        //        mytxtfield.text=[stateList objectAtIndex:0];
-        //        self.stateName=[stateList objectAtIndex:0];
+        
         
         _categorytxt.text=[pkarray objectAtIndex:0];
-        //        addressdetailsText.text=[address objectAtIndex:0];
-        //        loactionName=[location objectAtIndex:0];
+        
     }
     
     [_categorytxt resignFirstResponder];

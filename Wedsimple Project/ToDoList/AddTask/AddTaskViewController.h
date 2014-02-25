@@ -12,6 +12,7 @@
 {
     
     NSArray *pkarray;
+    NSArray *eventarray;
 
     IBOutlet UIScrollView *scroll;
     
@@ -26,8 +27,10 @@
 - (IBAction)done:(id)sender;
 - (IBAction)cancel:(UIBarButtonItem *)sender;
 @property (retain, nonatomic) IBOutlet UIPickerView *pickerVw;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *donebtn;
 
 @property (strong, nonatomic) IBOutlet UITextField *datetxt;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *cancelbtn;
 
 @property (strong, nonatomic) IBOutlet UITextField *categorytxt;
 @property (strong, nonatomic) IBOutlet UITextField *eventtxt;
