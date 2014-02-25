@@ -8,6 +8,7 @@
 
 #import "ManageBudget.h"
 #import "Customcell.h"
+#import "DetailBudget.h"
 
 @interface ManageBudget ()
 
@@ -64,7 +65,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    DetailBudget *DetailBudget_ =[[DetailBudget alloc]init];
+    [self.navigationController pushViewController:DetailBudget_ animated:YES];
     
 }
 

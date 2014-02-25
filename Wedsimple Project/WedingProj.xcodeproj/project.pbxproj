@@ -67,6 +67,10 @@
 		7AE7B6CF18BCB89600D54692 /* EventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE7B6CE18BCB89600D54692 /* EventViewController.xib */; };
 		7AE7B6D318BCBAA000D54692 /* AddEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE7B6D118BCBAA000D54692 /* AddEventViewController.m */; };
 		7AE7B6D418BCBAA000D54692 /* AddEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE7B6D218BCBAA000D54692 /* AddEventViewController.xib */; };
+		7AE7B6FD18BCC71F00D54692 /* DetailBudget.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE7B6FB18BCC71F00D54692 /* DetailBudget.m */; };
+		7AE7B6FE18BCC71F00D54692 /* DetailBudget.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE7B6FC18BCC71F00D54692 /* DetailBudget.xib */; };
+		7AE7B70318BCCD0F00D54692 /* EditBudget.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE7B70118BCCD0F00D54692 /* EditBudget.m */; };
+		7AE7B70418BCCD0F00D54692 /* EditBudget.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE7B70218BCCD0F00D54692 /* EditBudget.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -167,6 +171,12 @@
 		7AE7B6D018BCBAA000D54692 /* AddEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEventViewController.h; sourceTree = "<group>"; };
 		7AE7B6D118BCBAA000D54692 /* AddEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEventViewController.m; sourceTree = "<group>"; };
 		7AE7B6D218BCBAA000D54692 /* AddEventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddEventViewController.xib; sourceTree = "<group>"; };
+		7AE7B6FA18BCC71F00D54692 /* DetailBudget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailBudget.h; path = Budget/DetailBudget.h; sourceTree = "<group>"; };
+		7AE7B6FB18BCC71F00D54692 /* DetailBudget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailBudget.m; path = Budget/DetailBudget.m; sourceTree = "<group>"; };
+		7AE7B6FC18BCC71F00D54692 /* DetailBudget.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailBudget.xib; path = Budget/DetailBudget.xib; sourceTree = "<group>"; };
+		7AE7B70018BCCD0F00D54692 /* EditBudget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditBudget.h; path = "Budget/Manage Budget/EditBudget/EditBudget.h"; sourceTree = "<group>"; };
+		7AE7B70118BCCD0F00D54692 /* EditBudget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditBudget.m; path = "Budget/Manage Budget/EditBudget/EditBudget.m"; sourceTree = "<group>"; };
+		7AE7B70218BCCD0F00D54692 /* EditBudget.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EditBudget.xib; path = "Budget/Manage Budget/EditBudget/EditBudget.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -352,6 +362,8 @@
 				4509172E18B774740092245E /* BudgetViewController.h */,
 				4509172F18B774740092245E /* BudgetViewController.m */,
 				4509173018B774740092245E /* BudgetViewController.xib */,
+				7AE7B6FF18BCCCCB00D54692 /* Edit Budget */,
+				7AE7B6D518BCC6BD00D54692 /* detailBudget */,
 				7AE7B69418BC7D8000D54692 /* CalculateBudget */,
 				7AE7B69818BC7D8000D54692 /* Manage Budget */,
 			);
@@ -553,6 +565,26 @@
 			path = Event/AddEvent;
 			sourceTree = "<group>";
 		};
+		7AE7B6D518BCC6BD00D54692 /* detailBudget */ = {
+			isa = PBXGroup;
+			children = (
+				7AE7B6FA18BCC71F00D54692 /* DetailBudget.h */,
+				7AE7B6FB18BCC71F00D54692 /* DetailBudget.m */,
+				7AE7B6FC18BCC71F00D54692 /* DetailBudget.xib */,
+			);
+			name = detailBudget;
+			sourceTree = "<group>";
+		};
+		7AE7B6FF18BCCCCB00D54692 /* Edit Budget */ = {
+			isa = PBXGroup;
+			children = (
+				7AE7B70018BCCD0F00D54692 /* EditBudget.h */,
+				7AE7B70118BCCD0F00D54692 /* EditBudget.m */,
+				7AE7B70218BCCD0F00D54692 /* EditBudget.xib */,
+			);
+			name = "Edit Budget";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -635,7 +667,9 @@
 				7AE7B6CF18BCB89600D54692 /* EventViewController.xib in Resources */,
 				4509173818B7749D0092245E /* VendorViewController.xib in Resources */,
 				450916E018B765DD0092245E /* InfoPlist.strings in Resources */,
+				7AE7B6FE18BCC71F00D54692 /* DetailBudget.xib in Resources */,
 				4B1653A418BB4CAA007A66A8 /* index2.jpg in Resources */,
+				7AE7B70418BCCD0F00D54692 /* EditBudget.xib in Resources */,
 				4B16539418BB4B6B007A66A8 /* SelectViewController.xib in Resources */,
 				7AE7B6A318BC7D8000D54692 /* Customcell.xib in Resources */,
 				7AE7B6A118BC7D8000D54692 /* CalculateBudget.xib in Resources */,
@@ -685,11 +719,13 @@
 				4B1653B618BB57B6007A66A8 /* Cell1.m in Sources */,
 				7AE7B6A018BC7D8000D54692 /* CalculateBudget.m in Sources */,
 				450916E618B765DD0092245E /* AppDelegate.m in Sources */,
+				7AE7B70318BCCD0F00D54692 /* EditBudget.m in Sources */,
 				7AE7B6D318BCBAA000D54692 /* AddEventViewController.m in Sources */,
 				4509172B18B774360092245E /* TodolistViewController.m in Sources */,
 				450916E218B765DD0092245E /* main.m in Sources */,
 				7AE7B6C618BCB71900D54692 /* AddTaskViewController.m in Sources */,
 				4B1653BC18BB6746007A66A8 /* Cell3.m in Sources */,
+				7AE7B6FD18BCC71F00D54692 /* DetailBudget.m in Sources */,
 				4509171318B770AA0092245E /* HomeViewController.m in Sources */,
 				4509170818B767760092245E /* WelcomeViewController.m in Sources */,
 				4509173718B7749D0092245E /* VendorViewController.m in Sources */,
