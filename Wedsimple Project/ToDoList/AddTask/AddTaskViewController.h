@@ -13,6 +13,10 @@
     
     NSArray *pkarray;
     NSArray *eventarray;
+    NSArray *vendorarray;
+    NSArray *statusarray;
+
+    
 
     IBOutlet UIScrollView *scroll;
     

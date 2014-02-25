@@ -39,9 +39,9 @@
     _pickerVw.showsSelectionIndicator=YES;
     [_datetxt setInputView:_datepickerView];
     [_categorytxt setInputView:_respondingView];
+    [_eventtxt setInputView:_respondingView];
     
-    
-    
+    _categorytxt.tag=1;
     _eventtxt.tag=2;
     _vendortxt.tag=3;
     _statustxt.tag=4;
@@ -52,15 +52,35 @@
     pkarray=[[NSArray alloc]initWithObjects:@"Category1",@"Category2",@"Category3",@"Category4",@"Category5",@"Category6", nil];
     
     eventarray=[[NSArray alloc]initWithObjects:@"Event1",@"Event2",@"Event3",@"Event4",@"Event5",@"Event6", nil];
+    
+    vendorarray=[[NSArray alloc]initWithObjects:@"Vendor1",@"Vendor2",@"Vendor3",@"Vendor4",@"Vendor5",@"Vendor6", nil];
+    
+    statusarray=[[NSArray alloc]initWithObjects:@"NO",@"YES", nil];
 }
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField
 {
+    if (textField.tag==1) {
+        _pickerVw.tag=1;
+        _donebtn.tag=1;
+        _cancelbtn.tag=1;
+    }
     if (textField.tag==2) {
         _pickerVw.tag=2;
         _donebtn.tag=2;
         _cancelbtn.tag=2;
     }
+    if (textField.tag==3) {
+        _pickerVw.tag=3;
+        _donebtn.tag=3;
+        _cancelbtn.tag=3;
+    }
+    if (textField.tag==4) {
+        _pickerVw.tag=4;
+        _donebtn.tag=4;
+        _cancelbtn.tag=4;
+    }
+
 }
 #pragma mark -
 #pragma mark - picker view delegates
@@ -76,10 +96,19 @@
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
     NSInteger rowCount;
+    if (_pickerVw.tag==1) {
+        rowCount=[pkarray count];
+    }
     if (_pickerVw.tag==2) {
         rowCount=[eventarray count];
     }
-    rowCount=[pkarray count];
+    if (_pickerVw.tag==3) {
+        rowCount=[vendorarray count];
+    }
+    if (_pickerVw.tag==4) {
+        rowCount=[statusarray count];
+    }
+    
     return rowCount;
 }
 
@@ -88,26 +117,64 @@
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 
 {
+    
+    
     // return [location objectAtIndex:row];
+    if (_pickerVw.tag==1) {
+        return [pkarray objectAtIndex:row];
+    }
+
     if (_pickerVw.tag==2) {
        return [eventarray objectAtIndex:row];
     }
-    return [pkarray objectAtIndex:row];
+    if (_pickerVw.tag==3) {
+        return [vendorarray objectAtIndex:row];
+    }
+    
+
+    else
+    {
+    return [statusarray objectAtIndex:row];
+    }
 }
 
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
 
+    if (_pickerVw.tag==1) {
+        _categorytxt.text=[pkarray objectAtIndex:row];
+    }
+    
+    
     if (_pickerVw.tag==2) {
         _eventtxt.text=[eventarray objectAtIndex:row];
     }
-    _categorytxt.text=[pkarray objectAtIndex:row];
-        
+    
+    if (_pickerVw.tag==3) {
+        _vendortxt.text=[vendorarray objectAtIndex:row];
+    }
+    if (_pickerVw.tag==4) {
+        _statustxt.text=[statusarray objectAtIndex:row];
+    }
+    
+    
 }
 
 - (IBAction)done:(id)sender
 {
+    
+    if (_donebtn.tag==1) {
+        if (!(_categorytxt.text.length>0)) {
+            
+            _categorytxt.text=[pkarray objectAtIndex:0];
+            
+        }
+        
+        [_categorytxt resignFirstResponder];
+        
+    }
+
     if (_donebtn.tag==2) {
         if (!(_eventtxt.text.length>0)) {
             
@@ -118,23 +185,61 @@
         [_eventtxt resignFirstResponder];
 
     }
-    if (!(_categorytxt.text.length>0)) {
+    if (_donebtn.tag==3) {
+        if (!(_vendortxt.text.length>0)) {
+            
+            _vendortxt.text=[vendorarray objectAtIndex:0];
+            
+        }
         
-        
-        _categorytxt.text=[pkarray objectAtIndex:0];
+        [_eventtxt resignFirstResponder];
         
     }
-    
-    [_categorytxt resignFirstResponder];
+    if (_donebtn.tag==4) {
+        if (!(_statustxt.text.length>0)) {
+            
+            _statustxt.text=[statusarray objectAtIndex:0];
+            
+        }
+        
+        [_statustxt resignFirstResponder];
+        
+    }
+
+
 }
 - (IBAction)cancel:(UIBarButtonItem *)sender
 {
-    _categorytxt.text=@"";
     
-    //addressdetailsText.text=@"";
+    if (_cancelbtn.tag==1) {
+        
+        _categorytxt.text=@"";
+        [_categorytxt resignFirstResponder];
+        
+    }
     
+    if (_cancelbtn.tag==2) {
+        
+        _eventtxt.text=@"";
+        [_eventtxt resignFirstResponder];
+        
+    }
     
-    [_categorytxt resignFirstResponder];
+    if (_cancelbtn.tag==3) {
+        
+        _vendortxt.text=@"";
+        [_vendortxt resignFirstResponder];
+        
+    }
+    
+    if (_cancelbtn.tag==1) {
+        
+        _statustxt.text=@"";
+        [_statustxt resignFirstResponder];
+        
+    }
+
+    
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
