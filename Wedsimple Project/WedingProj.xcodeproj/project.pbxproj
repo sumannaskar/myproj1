@@ -57,6 +57,12 @@
 		4B1653B818BB57D0007A66A8 /* Cell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B1653B718BB57D0007A66A8 /* Cell1.xib */; };
 		4B1653BC18BB6746007A66A8 /* Cell3.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1653BB18BB6746007A66A8 /* Cell3.m */; };
 		4B1653BE18BB6766007A66A8 /* Cell3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B1653BD18BB6766007A66A8 /* Cell3.xib */; };
+		7AE7B6A018BC7D8000D54692 /* CalculateBudget.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE7B69618BC7D8000D54692 /* CalculateBudget.m */; };
+		7AE7B6A118BC7D8000D54692 /* CalculateBudget.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE7B69718BC7D8000D54692 /* CalculateBudget.xib */; };
+		7AE7B6A218BC7D8000D54692 /* Customcell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE7B69B18BC7D8000D54692 /* Customcell.m */; };
+		7AE7B6A318BC7D8000D54692 /* Customcell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE7B69C18BC7D8000D54692 /* Customcell.xib */; };
+		7AE7B6A418BC7D8000D54692 /* ManageBudget.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE7B69E18BC7D8000D54692 /* ManageBudget.m */; };
+		7AE7B6A518BC7D8000D54692 /* ManageBudget.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE7B69F18BC7D8000D54692 /* ManageBudget.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,6 +148,15 @@
 		4B1653BA18BB6746007A66A8 /* Cell3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cell3.h; path = ToDoList/cell/Cell3.h; sourceTree = "<group>"; };
 		4B1653BB18BB6746007A66A8 /* Cell3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cell3.m; path = ToDoList/cell/Cell3.m; sourceTree = "<group>"; };
 		4B1653BD18BB6766007A66A8 /* Cell3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Cell3.xib; path = ToDoList/cell/Cell3.xib; sourceTree = "<group>"; };
+		7AE7B69518BC7D8000D54692 /* CalculateBudget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculateBudget.h; sourceTree = "<group>"; };
+		7AE7B69618BC7D8000D54692 /* CalculateBudget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculateBudget.m; sourceTree = "<group>"; };
+		7AE7B69718BC7D8000D54692 /* CalculateBudget.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalculateBudget.xib; sourceTree = "<group>"; };
+		7AE7B69A18BC7D8000D54692 /* Customcell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Customcell.h; sourceTree = "<group>"; };
+		7AE7B69B18BC7D8000D54692 /* Customcell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Customcell.m; sourceTree = "<group>"; };
+		7AE7B69C18BC7D8000D54692 /* Customcell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Customcell.xib; sourceTree = "<group>"; };
+		7AE7B69D18BC7D8000D54692 /* ManageBudget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManageBudget.h; sourceTree = "<group>"; };
+		7AE7B69E18BC7D8000D54692 /* ManageBudget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManageBudget.m; sourceTree = "<group>"; };
+		7AE7B69F18BC7D8000D54692 /* ManageBudget.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ManageBudget.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -327,6 +342,8 @@
 		4509173318B774780092245E /* Budget */ = {
 			isa = PBXGroup;
 			children = (
+				7AE7B69418BC7D8000D54692 /* CalculateBudget */,
+				7AE7B69818BC7D8000D54692 /* Manage Budget */,
 				4509172E18B774740092245E /* BudgetViewController.h */,
 				4509172F18B774740092245E /* BudgetViewController.m */,
 				4509173018B774740092245E /* BudgetViewController.xib */,
@@ -462,6 +479,39 @@
 			name = cell;
 			sourceTree = "<group>";
 		};
+		7AE7B69418BC7D8000D54692 /* CalculateBudget */ = {
+			isa = PBXGroup;
+			children = (
+				7AE7B69518BC7D8000D54692 /* CalculateBudget.h */,
+				7AE7B69618BC7D8000D54692 /* CalculateBudget.m */,
+				7AE7B69718BC7D8000D54692 /* CalculateBudget.xib */,
+			);
+			name = CalculateBudget;
+			path = Budget/CalculateBudget;
+			sourceTree = "<group>";
+		};
+		7AE7B69818BC7D8000D54692 /* Manage Budget */ = {
+			isa = PBXGroup;
+			children = (
+				7AE7B69918BC7D8000D54692 /* Customcell */,
+				7AE7B69D18BC7D8000D54692 /* ManageBudget.h */,
+				7AE7B69E18BC7D8000D54692 /* ManageBudget.m */,
+				7AE7B69F18BC7D8000D54692 /* ManageBudget.xib */,
+			);
+			name = "Manage Budget";
+			path = "Budget/Manage Budget";
+			sourceTree = "<group>";
+		};
+		7AE7B69918BC7D8000D54692 /* Customcell */ = {
+			isa = PBXGroup;
+			children = (
+				7AE7B69A18BC7D8000D54692 /* Customcell.h */,
+				7AE7B69B18BC7D8000D54692 /* Customcell.m */,
+				7AE7B69C18BC7D8000D54692 /* Customcell.xib */,
+			);
+			path = Customcell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -547,6 +597,8 @@
 				4B1653A418BB4CAA007A66A8 /* index2.jpg in Resources */,
 				451EE69718BB225B0098FC96 /* AddEventViewController.xib in Resources */,
 				4B16539418BB4B6B007A66A8 /* SelectViewController.xib in Resources */,
+				7AE7B6A318BC7D8000D54692 /* Customcell.xib in Resources */,
+				7AE7B6A118BC7D8000D54692 /* CalculateBudget.xib in Resources */,
 				4509172C18B774360092245E /* TodolistViewController.xib in Resources */,
 				4B16539E18BB4C1A007A66A8 /* Cell.xib in Resources */,
 				4509171418B770AA0092245E /* HomeViewController.xib in Resources */,
@@ -554,6 +606,7 @@
 				4B1653AA18BB5192007A66A8 /* SendIndividuallyViewController.xib in Resources */,
 				4B16537618BB483E007A66A8 /* InvViewController.xib in Resources */,
 				451EE6B618BB545C0098FC96 /* Cell2.xib in Resources */,
+				7AE7B6A518BC7D8000D54692 /* ManageBudget.xib in Resources */,
 				450916E818B765DD0092245E /* Images.xcassets in Resources */,
 				4B16539918BB4C0B007A66A8 /* InvitationViewController.xib in Resources */,
 				4509170918B767760092245E /* WelcomeViewController.xib in Resources */,
@@ -577,6 +630,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AE7B6A418BC7D8000D54692 /* ManageBudget.m in Sources */,
+				7AE7B6A218BC7D8000D54692 /* Customcell.m in Sources */,
 				4B16539318BB4B6B007A66A8 /* SelectViewController.m in Sources */,
 				4B16539D18BB4C1A007A66A8 /* Cell.m in Sources */,
 				4509170D18B76DFD0092245E /* LoginViewController.m in Sources */,
@@ -586,6 +641,7 @@
 				451EE69C18BB27AE0098FC96 /* AddTaskViewController.m in Sources */,
 				451EE6B418BB540B0098FC96 /* Cell2.m in Sources */,
 				4B1653B618BB57B6007A66A8 /* Cell1.m in Sources */,
+				7AE7B6A018BC7D8000D54692 /* CalculateBudget.m in Sources */,
 				450916E618B765DD0092245E /* AppDelegate.m in Sources */,
 				4509172B18B774360092245E /* TodolistViewController.m in Sources */,
 				451EE69618BB225B0098FC96 /* AddEventViewController.m in Sources */,
