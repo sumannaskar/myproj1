@@ -8,14 +8,24 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AddTaskViewController : UIViewController
+@interface AddTaskViewController : UIViewController<UIPickerViewDataSource,UIPickerViewDelegate,UITextFieldDelegate>
 {
+    
+    NSArray *pkarray;
+
     IBOutlet UIScrollView *scroll;
     
     
     IBOutlet UITextView *informationtxt;
     IBOutlet UITextField *nametxt;
+   
 }
+
+
+@property (retain, nonatomic) IBOutlet UIView *respondingView;
+- (IBAction)done:(id)sender;
+- (IBAction)cancel:(UIBarButtonItem *)sender;
+@property (retain, nonatomic) IBOutlet UIPickerView *pickerVw;
 
 @property (strong, nonatomic) IBOutlet UITextField *datetxt;
 
@@ -23,5 +33,12 @@
 @property (strong, nonatomic) IBOutlet UITextField *eventtxt;
 @property (strong, nonatomic) IBOutlet UITextField *vendortxt;
 @property (strong, nonatomic) IBOutlet UITextField *statustxt;
+
+@property (retain, nonatomic) IBOutlet UIView *datepickerView;
+
+@property (strong, nonatomic) IBOutlet UIDatePicker *datepickerVW;
+
+- (IBAction)donedate:(id)sender;
+- (IBAction)canceldate:(UIBarButtonItem *)sender;
 
 @end

@@ -49,7 +49,6 @@
     [_datepickerVW setDate:[NSDate date]];
     
     pkarray=[[NSArray alloc]initWithObjects:@"Formal",@"Casual", nil];
-    _donedatebtn.tag=1;
     
 }
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
