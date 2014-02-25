@@ -38,8 +38,13 @@
 }
 
 - (IBAction)ManageBudget:(id)sender {
+    
+    ManageBudget *ManageBudget_ = [[ManageBudget alloc]init];
+    [self.navigationController pushViewController:ManageBudget_ animated:YES];
 }
 
 - (IBAction)CalculateBudget:(id)sender {
+    CalculateBudget *CalculateBudget_ = [[CalculateBudget alloc]init];
+    [self.navigationController pushViewController:CalculateBudget_ animated:YES];
 }
 @end
