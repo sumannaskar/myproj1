@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
@@ -10,7 +10,7 @@
                 <outlet property="pickerVw" destination="AKd-2a-jIP" id="HkM-7j-4Hf"/>
                 <outlet property="respondingView" destination="q4h-bB-yb2" id="STP-IS-c1Z"/>
                 <outlet property="scroll" destination="V3R-jq-mc4" id="08G-Ee-N6r"/>
-                <outlet property="view" destination="1" id="3"/>
+                <outlet property="view" destination="1" id="qAe-pj-dXm"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

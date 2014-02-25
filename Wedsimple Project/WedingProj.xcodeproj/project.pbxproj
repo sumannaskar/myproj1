@@ -62,13 +62,11 @@
 		7AE7B6AB18BC9EEA00D54692 /* Budgetlist.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE7B6A918BC9EEA00D54692 /* Budgetlist.xib */; };
 		7AE7B6AF18BCA35400D54692 /* BudgetlistCC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE7B6AE18BCA35400D54692 /* BudgetlistCC.m */; };
 		7AE7B6B118BCA36D00D54692 /* BudgetlistCC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE7B6B018BCA36D00D54692 /* BudgetlistCC.xib */; };
-		7AE7B6C018BCB59B00D54692 /* AddEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE7B6BE18BCB59B00D54692 /* AddEventViewController.m */; };
-		7AE7B6C218BCB5D200D54692 /* AddEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE7B6C118BCB5D200D54692 /* AddEventViewController.xib */; };
 		7AE7B6C618BCB71900D54692 /* AddTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE7B6C418BCB71900D54692 /* AddTaskViewController.m */; };
 		7AE7B6C718BCB71900D54692 /* AddTaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE7B6C518BCB71900D54692 /* AddTaskViewController.xib */; };
-		7AE7B6CC18BCB85D00D54692 /* AddEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE7B6CA18BCB85D00D54692 /* AddEventViewController.m */; };
-		7AE7B6CD18BCB85D00D54692 /* AddEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE7B6CB18BCB85D00D54692 /* AddEventViewController.xib */; };
 		7AE7B6CF18BCB89600D54692 /* EventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE7B6CE18BCB89600D54692 /* EventViewController.xib */; };
+		7AE7B6D318BCBAA000D54692 /* AddEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE7B6D118BCBAA000D54692 /* AddEventViewController.m */; };
+		7AE7B6D418BCBAA000D54692 /* AddEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE7B6D218BCBAA000D54692 /* AddEventViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -162,16 +160,13 @@
 		7AE7B6AD18BCA35400D54692 /* BudgetlistCC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BudgetlistCC.h; path = Budgetlist/BudgetlistCC/BudgetlistCC.h; sourceTree = "<group>"; };
 		7AE7B6AE18BCA35400D54692 /* BudgetlistCC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BudgetlistCC.m; path = Budgetlist/BudgetlistCC/BudgetlistCC.m; sourceTree = "<group>"; };
 		7AE7B6B018BCA36D00D54692 /* BudgetlistCC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BudgetlistCC.xib; path = Budgetlist/BudgetlistCC/BudgetlistCC.xib; sourceTree = "<group>"; };
-		7AE7B6BD18BCB59B00D54692 /* AddEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddEventViewController.h; path = Event/AddEvent/AddEventViewController.h; sourceTree = "<group>"; };
-		7AE7B6BE18BCB59B00D54692 /* AddEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddEventViewController.m; path = Event/AddEvent/AddEventViewController.m; sourceTree = "<group>"; };
-		7AE7B6C118BCB5D200D54692 /* AddEventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddEventViewController.xib; path = Event/AddEvent/AddEventViewController.xib; sourceTree = "<group>"; };
 		7AE7B6C318BCB71900D54692 /* AddTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddTaskViewController.h; path = ToDoList/AddTask/AddTaskViewController.h; sourceTree = "<group>"; };
 		7AE7B6C418BCB71900D54692 /* AddTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddTaskViewController.m; path = ToDoList/AddTask/AddTaskViewController.m; sourceTree = "<group>"; };
 		7AE7B6C518BCB71900D54692 /* AddTaskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddTaskViewController.xib; path = ToDoList/AddTask/AddTaskViewController.xib; sourceTree = "<group>"; };
-		7AE7B6C918BCB85D00D54692 /* AddEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEventViewController.h; sourceTree = "<group>"; };
-		7AE7B6CA18BCB85D00D54692 /* AddEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEventViewController.m; sourceTree = "<group>"; };
-		7AE7B6CB18BCB85D00D54692 /* AddEventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddEventViewController.xib; sourceTree = "<group>"; };
 		7AE7B6CE18BCB89600D54692 /* EventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EventViewController.xib; path = Event/EventViewController.xib; sourceTree = "<group>"; };
+		7AE7B6D018BCBAA000D54692 /* AddEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEventViewController.h; sourceTree = "<group>"; };
+		7AE7B6D118BCBAA000D54692 /* AddEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEventViewController.m; sourceTree = "<group>"; };
+		7AE7B6D218BCBAA000D54692 /* AddEventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddEventViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -380,9 +375,6 @@
 				4509172218B774090092245E /* EventViewController.h */,
 				4509172318B774090092245E /* EventViewController.m */,
 				7AE7B6C818BCB85D00D54692 /* AddEvent */,
-				7AE7B6C118BCB5D200D54692 /* AddEventViewController.xib */,
-				7AE7B6BD18BCB59B00D54692 /* AddEventViewController.h */,
-				7AE7B6BE18BCB59B00D54692 /* AddEventViewController.m */,
 			);
 			name = "Add Event";
 			sourceTree = "<group>";
@@ -553,9 +545,9 @@
 		7AE7B6C818BCB85D00D54692 /* AddEvent */ = {
 			isa = PBXGroup;
 			children = (
-				7AE7B6C918BCB85D00D54692 /* AddEventViewController.h */,
-				7AE7B6CA18BCB85D00D54692 /* AddEventViewController.m */,
-				7AE7B6CB18BCB85D00D54692 /* AddEventViewController.xib */,
+				7AE7B6D018BCBAA000D54692 /* AddEventViewController.h */,
+				7AE7B6D118BCBAA000D54692 /* AddEventViewController.m */,
+				7AE7B6D218BCBAA000D54692 /* AddEventViewController.xib */,
 			);
 			name = AddEvent;
 			path = Event/AddEvent;
@@ -636,7 +628,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AE7B6C218BCB5D200D54692 /* AddEventViewController.xib in Resources */,
 				4B1653A318BB4CAA007A66A8 /* index.jpg in Resources */,
 				4509170E18B76DFD0092245E /* LoginViewController.xib in Resources */,
 				7AE7B6AB18BC9EEA00D54692 /* Budgetlist.xib in Resources */,
@@ -657,7 +648,7 @@
 				4B16537618BB483E007A66A8 /* InvViewController.xib in Resources */,
 				7AE7B6C718BCB71900D54692 /* AddTaskViewController.xib in Resources */,
 				451EE6B618BB545C0098FC96 /* Cell2.xib in Resources */,
-				7AE7B6CD18BCB85D00D54692 /* AddEventViewController.xib in Resources */,
+				7AE7B6D418BCBAA000D54692 /* AddEventViewController.xib in Resources */,
 				7AE7B6A518BC7D8000D54692 /* ManageBudget.xib in Resources */,
 				450916E818B765DD0092245E /* Images.xcassets in Resources */,
 				4B16539918BB4C0B007A66A8 /* InvitationViewController.xib in Resources */,
@@ -689,13 +680,12 @@
 				4509170D18B76DFD0092245E /* LoginViewController.m in Sources */,
 				4509172518B774090092245E /* EventViewController.m in Sources */,
 				4B16539818BB4C0B007A66A8 /* InvitationViewController.m in Sources */,
-				7AE7B6CC18BCB85D00D54692 /* AddEventViewController.m in Sources */,
 				4509171918B773B00092245E /* GuestViewController.m in Sources */,
 				451EE6B418BB540B0098FC96 /* Cell2.m in Sources */,
 				4B1653B618BB57B6007A66A8 /* Cell1.m in Sources */,
 				7AE7B6A018BC7D8000D54692 /* CalculateBudget.m in Sources */,
-				7AE7B6C018BCB59B00D54692 /* AddEventViewController.m in Sources */,
 				450916E618B765DD0092245E /* AppDelegate.m in Sources */,
+				7AE7B6D318BCBAA000D54692 /* AddEventViewController.m in Sources */,
 				4509172B18B774360092245E /* TodolistViewController.m in Sources */,
 				450916E218B765DD0092245E /* main.m in Sources */,
 				7AE7B6C618BCB71900D54692 /* AddTaskViewController.m in Sources */,
