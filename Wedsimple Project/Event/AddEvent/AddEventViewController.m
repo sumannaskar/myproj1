@@ -32,8 +32,12 @@
     _pickerVw.delegate=self;
     _pickerVw.showsSelectionIndicator=YES;
     [_dresscodetxt setInputView:_respondingView];
+    [_datetxt setInputView:_datepickerView];
+    [_dateendtxt setInputView:_datepickerView];
     
-    pkarray=[[NSArray alloc]initWithObjects:@"location1",@"location2",@"location3",@"location4",@"location5",@"location6",@"location7",@"location8", nil];
+    [_datepickerVW setDate:[NSDate date]];
+    
+    pkarray=[[NSArray alloc]initWithObjects:@"Formal",@"Casual", nil];
 }
 
 #pragma mark -
@@ -105,6 +109,33 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)donedate:(id)sender
+{
+    
+    _datetxt.text=[self formatDate:_datepickerVW.date];
+   // _datetxt.text=[NSString stringWithFormat:@"%@",_datepickerVW.date];
+    
+    [_datetxt resignFirstResponder];
+    
+     _dateendtxt.text=[self formatDate:_datepickerVW.date];
+     [_dateendtxt resignFirstResponder];
+    [_dateendtxt resignFirstResponder];
+
+}
+- (IBAction)canceldate:(UIBarButtonItem *)sender
+{
+    _datetxt.text=@"";
+    [_datetxt resignFirstResponder];
+}
+- (NSString *)formatDate:(NSDate *)date
+{
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateStyle:NSDateFormatterShortStyle];
+    [dateFormatter setDateFormat:@"MM'/'dd'/'yyyy hh:mm a"];
+    NSString *formattedDate = [dateFormatter stringFromDate:date];
+    return formattedDate;
 }
 
 @end

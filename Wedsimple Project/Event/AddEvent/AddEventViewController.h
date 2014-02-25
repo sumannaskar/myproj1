@@ -16,8 +16,20 @@
 
 @property (strong, nonatomic) IBOutlet UITextField *dresscodetxt;
 
+@property (strong, nonatomic) IBOutlet UITextField *datetxt;
+
+@property (strong, nonatomic) IBOutlet UITextField *dateendtxt;
+
 @property (retain, nonatomic) IBOutlet UIView *respondingView;
 - (IBAction)done:(id)sender;
 - (IBAction)cancel:(UIBarButtonItem *)sender;
 @property (retain, nonatomic) IBOutlet UIPickerView *pickerVw;
+
+@property (retain, nonatomic) IBOutlet UIView *datepickerView;
+
+@property (strong, nonatomic) IBOutlet UIDatePicker *datepickerVW;
+
+- (IBAction)donedate:(id)sender;
+- (IBAction)canceldate:(UIBarButtonItem *)sender;
+
 @end
