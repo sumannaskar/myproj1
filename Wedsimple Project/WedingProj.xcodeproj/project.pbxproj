@@ -63,6 +63,10 @@
 		7AE7B6A318BC7D8000D54692 /* Customcell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE7B69C18BC7D8000D54692 /* Customcell.xib */; };
 		7AE7B6A418BC7D8000D54692 /* ManageBudget.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE7B69E18BC7D8000D54692 /* ManageBudget.m */; };
 		7AE7B6A518BC7D8000D54692 /* ManageBudget.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE7B69F18BC7D8000D54692 /* ManageBudget.xib */; };
+		7AE7B6AA18BC9EEA00D54692 /* Budgetlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE7B6A818BC9EEA00D54692 /* Budgetlist.m */; };
+		7AE7B6AB18BC9EEA00D54692 /* Budgetlist.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE7B6A918BC9EEA00D54692 /* Budgetlist.xib */; };
+		7AE7B6AF18BCA35400D54692 /* BudgetlistCC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE7B6AE18BCA35400D54692 /* BudgetlistCC.m */; };
+		7AE7B6B118BCA36D00D54692 /* BudgetlistCC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE7B6B018BCA36D00D54692 /* BudgetlistCC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -157,6 +161,12 @@
 		7AE7B69D18BC7D8000D54692 /* ManageBudget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManageBudget.h; sourceTree = "<group>"; };
 		7AE7B69E18BC7D8000D54692 /* ManageBudget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManageBudget.m; sourceTree = "<group>"; };
 		7AE7B69F18BC7D8000D54692 /* ManageBudget.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ManageBudget.xib; sourceTree = "<group>"; };
+		7AE7B6A718BC9EEA00D54692 /* Budgetlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Budgetlist.h; path = Budgetlist/Budgetlist.h; sourceTree = "<group>"; };
+		7AE7B6A818BC9EEA00D54692 /* Budgetlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Budgetlist.m; path = Budgetlist/Budgetlist.m; sourceTree = "<group>"; };
+		7AE7B6A918BC9EEA00D54692 /* Budgetlist.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Budgetlist.xib; path = Budgetlist/Budgetlist.xib; sourceTree = "<group>"; };
+		7AE7B6AD18BCA35400D54692 /* BudgetlistCC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BudgetlistCC.h; path = Budgetlist/BudgetlistCC/BudgetlistCC.h; sourceTree = "<group>"; };
+		7AE7B6AE18BCA35400D54692 /* BudgetlistCC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BudgetlistCC.m; path = Budgetlist/BudgetlistCC/BudgetlistCC.m; sourceTree = "<group>"; };
+		7AE7B6B018BCA36D00D54692 /* BudgetlistCC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BudgetlistCC.xib; path = Budgetlist/BudgetlistCC/BudgetlistCC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -493,6 +503,7 @@
 		7AE7B69818BC7D8000D54692 /* Manage Budget */ = {
 			isa = PBXGroup;
 			children = (
+				7AE7B6A618BC9DE600D54692 /* Budgetlist */,
 				7AE7B69D18BC7D8000D54692 /* ManageBudget.h */,
 				7AE7B69E18BC7D8000D54692 /* ManageBudget.m */,
 				7AE7B69F18BC7D8000D54692 /* ManageBudget.xib */,
@@ -510,6 +521,27 @@
 				7AE7B69C18BC7D8000D54692 /* Customcell.xib */,
 			);
 			path = Customcell;
+			sourceTree = "<group>";
+		};
+		7AE7B6A618BC9DE600D54692 /* Budgetlist */ = {
+			isa = PBXGroup;
+			children = (
+				7AE7B6AC18BCA13500D54692 /* BudgetlistCC */,
+				7AE7B6A718BC9EEA00D54692 /* Budgetlist.h */,
+				7AE7B6A818BC9EEA00D54692 /* Budgetlist.m */,
+				7AE7B6A918BC9EEA00D54692 /* Budgetlist.xib */,
+			);
+			name = Budgetlist;
+			sourceTree = "<group>";
+		};
+		7AE7B6AC18BCA13500D54692 /* BudgetlistCC */ = {
+			isa = PBXGroup;
+			children = (
+				7AE7B6AD18BCA35400D54692 /* BudgetlistCC.h */,
+				7AE7B6AE18BCA35400D54692 /* BudgetlistCC.m */,
+				7AE7B6B018BCA36D00D54692 /* BudgetlistCC.xib */,
+			);
+			name = BudgetlistCC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -589,6 +621,7 @@
 			files = (
 				4B1653A318BB4CAA007A66A8 /* index.jpg in Resources */,
 				4509170E18B76DFD0092245E /* LoginViewController.xib in Resources */,
+				7AE7B6AB18BC9EEA00D54692 /* Budgetlist.xib in Resources */,
 				4509173218B774740092245E /* BudgetViewController.xib in Resources */,
 				4509172618B774090092245E /* EventViewController.xib in Resources */,
 				451EE69D18BB27AE0098FC96 /* AddTaskViewController.xib in Resources */,
@@ -603,6 +636,7 @@
 				4B16539E18BB4C1A007A66A8 /* Cell.xib in Resources */,
 				4509171418B770AA0092245E /* HomeViewController.xib in Resources */,
 				4B1653BE18BB6766007A66A8 /* Cell3.xib in Resources */,
+				7AE7B6B118BCA36D00D54692 /* BudgetlistCC.xib in Resources */,
 				4B1653AA18BB5192007A66A8 /* SendIndividuallyViewController.xib in Resources */,
 				4B16537618BB483E007A66A8 /* InvViewController.xib in Resources */,
 				451EE6B618BB545C0098FC96 /* Cell2.xib in Resources */,
@@ -652,7 +686,9 @@
 				4509173718B7749D0092245E /* VendorViewController.m in Sources */,
 				4B16537518BB483E007A66A8 /* InvViewController.m in Sources */,
 				4509173118B774740092245E /* BudgetViewController.m in Sources */,
+				7AE7B6AA18BC9EEA00D54692 /* Budgetlist.m in Sources */,
 				4B1653A918BB5192007A66A8 /* SendIndividuallyViewController.m in Sources */,
+				7AE7B6AF18BCA35400D54692 /* BudgetlistCC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
