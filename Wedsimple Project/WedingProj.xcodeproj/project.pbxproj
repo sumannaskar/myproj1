@@ -371,9 +371,9 @@
 		451EE69218BB222A0098FC96 /* Add Event */ = {
 			isa = PBXGroup;
 			children = (
-				7AE7B6CE18BCB89600D54692 /* EventViewController.xib */,
 				4509172218B774090092245E /* EventViewController.h */,
 				4509172318B774090092245E /* EventViewController.m */,
+				7AE7B6CE18BCB89600D54692 /* EventViewController.xib */,
 				7AE7B6C818BCB85D00D54692 /* AddEvent */,
 			);
 			name = "Add Event";
