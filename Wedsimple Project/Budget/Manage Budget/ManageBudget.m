@@ -58,8 +58,16 @@
         cell = [array objectAtIndex:0];
     }
     cell.event.text =@"event";
-    cell.budget.text=@"budget";
+    cell.budget.text=@"Total budget";
     return cell;
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    
+}
+
+
 
 @end
