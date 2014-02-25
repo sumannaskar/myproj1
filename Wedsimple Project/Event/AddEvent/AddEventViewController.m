@@ -103,11 +103,7 @@
 {
     
      _dresscodetxt.text=[pkarray objectAtIndex:row];
-//    locationSelect.text=[location objectAtIndex:row];
-//    loactionName=[location objectAtIndex:row];
-//    lati=[[latt objectAtIndex:row] floatValue];
-//    longi=[[longg objectAtIndex:row] floatValue];
-//    addressdetailsText.text=[address objectAtIndex:row];
+
     
 }
 

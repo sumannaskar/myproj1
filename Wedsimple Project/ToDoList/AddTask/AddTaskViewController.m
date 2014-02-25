@@ -34,6 +34,9 @@
     _vendortxt.delegate=self;
     _eventtxt.delegate=self;
     _statustxt.delegate=self;
+    _pickerVw.dataSource=self;
+    _pickerVw.delegate=self;
+    _pickerVw.showsSelectionIndicator=YES;
     [_datetxt setInputView:_datepickerView];
     [_categorytxt setInputView:_respondingView];
     
@@ -58,7 +61,7 @@
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
     NSInteger rowCount;
-    //rowCount= [location count];
+    
     rowCount=[pkarray count];
     return rowCount;
 }
@@ -77,12 +80,7 @@
 {
     
     _categorytxt.text=[pkarray objectAtIndex:row];
-    //    locationSelect.text=[location objectAtIndex:row];
-    //    loactionName=[location objectAtIndex:row];
-    //    lati=[[latt objectAtIndex:row] floatValue];
-    //    longi=[[longg objectAtIndex:row] floatValue];
-    //    addressdetailsText.text=[address objectAtIndex:row];
-    
+        
 }
 
 - (IBAction)done:(id)sender
