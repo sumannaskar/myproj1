@@ -27,6 +27,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    scroll.contentSize=CGSizeMake(320, 500);
 }
 
 - (void)didReceiveMemoryWarning

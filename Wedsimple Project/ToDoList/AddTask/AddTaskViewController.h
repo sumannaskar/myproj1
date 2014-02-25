@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface AddTaskViewController : UIViewController
+{
+    IBOutlet UIScrollView *scroll;
+}
 
 @end
