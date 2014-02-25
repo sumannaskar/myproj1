@@ -12,6 +12,13 @@
 {
     NSArray *pkarray;
     IBOutlet UIScrollView *scroll;
+    
+    
+    IBOutlet UITextField *venuetxt;
+    IBOutlet UITextField *nametxt;
+    
+    IBOutlet UITextField *budgettxt;
+    
 }
 
 @property (strong, nonatomic) IBOutlet UITextField *dresscodetxt;

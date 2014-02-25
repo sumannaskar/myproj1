@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddEventViewController">
             <connections>
+                <outlet property="budgettxt" destination="qI4-fN-7YC" id="OT7-o6-6ID"/>
                 <outlet property="canceldatebtn" destination="uyD-TH-gIq" id="dmS-6s-Vtw"/>
                 <outlet property="dateendtxt" destination="Lon-kp-f1e" id="sa5-rc-fH6"/>
                 <outlet property="datepickerVW" destination="UoI-Lb-kGV" id="ugv-ah-oxH"/>
@@ -13,9 +14,11 @@
                 <outlet property="datetxt" destination="UnR-pe-cig" id="UNo-yF-ibZ"/>
                 <outlet property="donedatebtn" destination="mTB-Jh-Cm1" id="o6C-kF-Fea"/>
                 <outlet property="dresscodetxt" destination="Toe-8j-oHv" id="xRZ-A3-hh4"/>
+                <outlet property="nametxt" destination="NMO-kh-D4d" id="gMN-f4-wwH"/>
                 <outlet property="pickerVw" destination="AKd-2a-jIP" id="HkM-7j-4Hf"/>
                 <outlet property="respondingView" destination="q4h-bB-yb2" id="STP-IS-c1Z"/>
                 <outlet property="scroll" destination="V3R-jq-mc4" id="08G-Ee-N6r"/>
+                <outlet property="venuetxt" destination="pc7-G2-DoT" id="Fgw-3d-y4j"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -30,7 +33,7 @@
                 </imageView>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="V3R-jq-mc4">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="483"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Venue:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zjr-gZ-Zt3">
                             <rect key="frame" x="20" y="338" width="74" height="53"/>
