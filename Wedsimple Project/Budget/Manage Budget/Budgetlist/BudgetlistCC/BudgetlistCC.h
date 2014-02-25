@@ -10,4 +10,8 @@
 
 @interface BudgetlistCC : UITableViewCell
 
+@property (strong, nonatomic) IBOutlet UIButton *select;
+@property (strong, nonatomic) IBOutlet UIButton *detail;
+@property (strong, nonatomic) IBOutlet UILabel *budgetname;
+
 @end
