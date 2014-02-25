@@ -43,6 +43,8 @@
 		7A1741E718B8C2340072747C /* ManageBudget.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A1741E518B8C2340072747C /* ManageBudget.xib */; };
 		7A1741F118B8C3C60072747C /* CalculateBudget.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1741EF18B8C3C60072747C /* CalculateBudget.m */; };
 		7A1741F218B8C3C60072747C /* CalculateBudget.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A1741F018B8C3C60072747C /* CalculateBudget.xib */; };
+		7AE7B69118BC6F3C00D54692 /* Customcell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE7B69018BC6F3C00D54692 /* Customcell.m */; };
+		7AE7B69318BC6F5700D54692 /* Customcell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE7B69218BC6F5700D54692 /* Customcell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +110,9 @@
 		7A1741EE18B8C3C60072747C /* CalculateBudget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalculateBudget.h; path = Budget/CalculateBudget/CalculateBudget.h; sourceTree = "<group>"; };
 		7A1741EF18B8C3C60072747C /* CalculateBudget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalculateBudget.m; path = Budget/CalculateBudget/CalculateBudget.m; sourceTree = "<group>"; };
 		7A1741F018B8C3C60072747C /* CalculateBudget.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CalculateBudget.xib; path = Budget/CalculateBudget/CalculateBudget.xib; sourceTree = "<group>"; };
+		7AE7B68F18BC6F3C00D54692 /* Customcell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Customcell.h; path = "Budget/Manage Budget/Customcell/Customcell.h"; sourceTree = "<group>"; };
+		7AE7B69018BC6F3C00D54692 /* Customcell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Customcell.m; path = "Budget/Manage Budget/Customcell/Customcell.m"; sourceTree = "<group>"; };
+		7AE7B69218BC6F5700D54692 /* Customcell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Customcell.xib; path = "Budget/Manage Budget/Customcell/Customcell.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -327,6 +332,7 @@
 		7A1741E218B8C2040072747C /* ManageBudget */ = {
 			isa = PBXGroup;
 			children = (
+				7AE7B68E18BC6EFB00D54692 /* customcell */,
 				7A1741E318B8C2340072747C /* ManageBudget.h */,
 				7A1741E418B8C2340072747C /* ManageBudget.m */,
 				7A1741E518B8C2340072747C /* ManageBudget.xib */,
@@ -342,6 +348,16 @@
 				4509173018B774740092245E /* BudgetViewController.xib */,
 			);
 			name = Budget;
+			sourceTree = "<group>";
+		};
+		7AE7B68E18BC6EFB00D54692 /* customcell */ = {
+			isa = PBXGroup;
+			children = (
+				7AE7B68F18BC6F3C00D54692 /* Customcell.h */,
+				7AE7B69018BC6F3C00D54692 /* Customcell.m */,
+				7AE7B69218BC6F5700D54692 /* Customcell.xib */,
+			);
+			name = customcell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -432,6 +448,7 @@
 				4509172018B773E60092245E /* InvitationViewController.xib in Resources */,
 				450916E818B765DD0092245E /* Images.xcassets in Resources */,
 				4509170918B767760092245E /* WelcomeViewController.xib in Resources */,
+				7AE7B69318BC6F5700D54692 /* Customcell.xib in Resources */,
 				4509171A18B773B00092245E /* GuestViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -465,6 +482,7 @@
 				4509170818B767760092245E /* WelcomeViewController.m in Sources */,
 				4509173718B7749D0092245E /* VendorViewController.m in Sources */,
 				4509173118B774740092245E /* BudgetViewController.m in Sources */,
+				7AE7B69118BC6F3C00D54692 /* Customcell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

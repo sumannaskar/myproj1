@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface ManageBudget : UIViewController
+{
+    IBOutlet UIImageView *backgroung;
+    IBOutlet UITableView *manageTable;
+    
+    
+}
 
 @end
