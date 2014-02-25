@@ -70,6 +70,7 @@
     [self.navigationController pushViewController:budgetVC animated:YES];
     NSLog(@"suman");
     NSLog(@"suman");
+    NSLog(@"suman");
 }
 - (IBAction)vendoractn:(UIButton *)sender
 {
