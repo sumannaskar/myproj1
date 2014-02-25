@@ -342,11 +342,11 @@
 		4509173318B774780092245E /* Budget */ = {
 			isa = PBXGroup;
 			children = (
-				7AE7B69418BC7D8000D54692 /* CalculateBudget */,
-				7AE7B69818BC7D8000D54692 /* Manage Budget */,
 				4509172E18B774740092245E /* BudgetViewController.h */,
 				4509172F18B774740092245E /* BudgetViewController.m */,
 				4509173018B774740092245E /* BudgetViewController.xib */,
+				7AE7B69418BC7D8000D54692 /* CalculateBudget */,
+				7AE7B69818BC7D8000D54692 /* Manage Budget */,
 			);
 			name = Budget;
 			sourceTree = "<group>";
@@ -493,10 +493,10 @@
 		7AE7B69818BC7D8000D54692 /* Manage Budget */ = {
 			isa = PBXGroup;
 			children = (
-				7AE7B69918BC7D8000D54692 /* Customcell */,
 				7AE7B69D18BC7D8000D54692 /* ManageBudget.h */,
 				7AE7B69E18BC7D8000D54692 /* ManageBudget.m */,
 				7AE7B69F18BC7D8000D54692 /* ManageBudget.xib */,
+				7AE7B69918BC7D8000D54692 /* Customcell */,
 			);
 			name = "Manage Budget";
 			path = "Budget/Manage Budget";
