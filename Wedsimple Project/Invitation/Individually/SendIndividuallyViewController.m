@@ -109,7 +109,7 @@
         [cell1.checkImgv setImage:[UIImage imageNamed:[checkImage objectAtIndex:indexPath.row]]];
     }
     
-    cell1.guestLbl.text = [NSString stringWithFormat:@"%d",indexPath.row];
+    cell1.guestLbl.text = [NSString stringWithFormat:@"%ld",(long)indexPath.row];
     
     
     [cell1.statusBtn addTarget:self action:@selector(InvStatus:) forControlEvents:UIControlEventTouchUpInside];
@@ -131,7 +131,7 @@
 }
 -(void) InvStatus:(UIButton*)button
 {
-    NSLog(@"%d",button.tag);
+    NSLog(@"%ld",(long)button.tag);
 }
 
 -(void)image

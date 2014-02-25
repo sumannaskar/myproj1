@@ -120,7 +120,7 @@
         [cell.checkImgv setImage:[UIImage imageNamed:[checkImage objectAtIndex:indexPath.row]]];
     }
     
-    cell.EventLbl.text = [NSString stringWithFormat:@"%d",indexPath.row];
+    cell.EventLbl.text = [NSString stringWithFormat:@"%ld",(long)indexPath.row];
     
     
     [cell.editBtn addTarget:self action:@selector(Edit:) forControlEvents:UIControlEventTouchUpInside];
@@ -142,7 +142,7 @@
 }
 -(void) Edit:(UIButton*)button
 {
-    NSLog(@"%d",button.tag);
+    NSLog(@"%ld",(long)button.tag);
 }
 
 -(void)image
