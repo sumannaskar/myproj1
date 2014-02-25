@@ -9,5 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface BudgetViewController : UIViewController
+{
+    
+    IBOutlet UIButton *CalculateBudget;
+    IBOutlet UIButton *ManageBudget;
+}
+- (IBAction)ManageBudget:(id)sender;
+- (IBAction)CalculateBudget:(id)sender;
 
 @end

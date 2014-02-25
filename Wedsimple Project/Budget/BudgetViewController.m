@@ -7,6 +7,8 @@
 //
 
 #import "BudgetViewController.h"
+#import "CalculateBudget.h"
+#import "ManageBudget.h"
 
 @interface BudgetViewController ()
 
@@ -35,4 +37,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)ManageBudget:(id)sender {
+}
+
+- (IBAction)CalculateBudget:(id)sender {
+}
 @end
