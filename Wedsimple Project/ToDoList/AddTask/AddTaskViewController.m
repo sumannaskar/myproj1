@@ -40,7 +40,8 @@
     [_datetxt setInputView:_datepickerView];
     [_categorytxt setInputView:_respondingView];
     [_eventtxt setInputView:_respondingView];
-    
+    [_vendortxt setInputView:_respondingView];
+    [_statustxt setInputView:_respondingView];
     _categorytxt.tag=1;
     _eventtxt.tag=2;
     _vendortxt.tag=3;
