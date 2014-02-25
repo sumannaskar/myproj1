@@ -9,6 +9,7 @@
 #import "BudgetlistCC.h"
 
 @implementation BudgetlistCC
+@synthesize select,detail,budgetname;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

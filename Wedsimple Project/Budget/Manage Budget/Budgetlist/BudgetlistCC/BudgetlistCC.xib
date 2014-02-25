@@ -36,6 +36,11 @@
                     </button>
                 </subviews>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="budgetname" destination="MsI-ry-JY8" id="Gfo-Vh-uwc"/>
+                <outlet property="detail" destination="bYd-Ed-xml" id="Qca-Wf-KA5"/>
+                <outlet property="select" destination="TSQ-2U-xRp" id="dwH-Kf-8JN"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>
