@@ -123,7 +123,7 @@
         </view>
         <view contentMode="scaleToFill" id="q4h-bB-yb2">
             <rect key="frame" x="0.0" y="0.0" width="352" height="260"/>
-            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <pickerView contentMode="scaleToFill" id="AKd-2a-jIP">
                     <rect key="frame" x="0.0" y="44" width="352" height="216"/>
