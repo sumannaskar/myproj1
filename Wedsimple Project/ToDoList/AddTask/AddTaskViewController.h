@@ -11,6 +11,17 @@
 @interface AddTaskViewController : UIViewController
 {
     IBOutlet UIScrollView *scroll;
+    
+    
+    IBOutlet UITextView *informationtxt;
+    IBOutlet UITextField *nametxt;
 }
+
+@property (strong, nonatomic) IBOutlet UITextField *datetxt;
+
+@property (strong, nonatomic) IBOutlet UITextField *categorytxt;
+@property (strong, nonatomic) IBOutlet UITextField *eventtxt;
+@property (strong, nonatomic) IBOutlet UITextField *vendortxt;
+@property (strong, nonatomic) IBOutlet UITextField *statustxt;
 
 @end

@@ -6,7 +6,14 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddTaskViewController">
             <connections>
+                <outlet property="categorytxt" destination="KBq-9R-3c8" id="HT7-Vz-yeV"/>
+                <outlet property="datetxt" destination="W9P-oV-oKG" id="4gD-Cb-AIV"/>
+                <outlet property="eventtxt" destination="OQz-Tm-ofD" id="0jY-Jn-ISP"/>
+                <outlet property="informationtxt" destination="9gY-Dt-f0l" id="OhL-zl-Gfk"/>
+                <outlet property="nametxt" destination="wRc-Jm-sXQ" id="Vwe-g0-ImO"/>
                 <outlet property="scroll" destination="Xdd-sj-IXA" id="ZTZ-hm-QN1"/>
+                <outlet property="statustxt" destination="mNG-Hk-w73" id="J7k-Fn-y1j"/>
+                <outlet property="vendortxt" destination="Vex-eZ-7wW" id="49s-4O-8d8"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -101,6 +108,13 @@
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="9gY-Dt-f0l">
+                            <rect key="frame" x="130" y="405" width="170" height="83"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
                     </subviews>
                 </scrollView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zvv-9v-vEl">
@@ -111,13 +125,6 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="9gY-Dt-f0l">
-                    <rect key="frame" x="130" y="411" width="170" height="79"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                </textView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
