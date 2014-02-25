@@ -41,7 +41,6 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    NSString *a;
     return 10;
 }
 //for normal table view....
