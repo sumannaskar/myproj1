@@ -18,16 +18,16 @@ cCompileC Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.
 cCompileC Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/Objects-normal/i386/AddEventViewController.o /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Event/AddEvent/AddEventViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/Objects-normal/i386/TodolistViewController.o /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/ToDoList/TodolistViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/Objects-normal/i386/main.o /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/WedingProj/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/Objects-normal/i386/AddTaskViewController.o /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/ToDoList/AddTask/AddTaskViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/Objects-normal/i386/Cell3.o /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/ToDoList/cell/Cell3.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/Objects-normal/i386/DetailBudget.o /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Budget/DetailBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/Objects-normal/i386/HomeViewController.o /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Home/HomeViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/Objects-normal/i386/WelcomeViewController.o /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Welcome/WelcomeViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/Objects-normal/i386/VendorViewController.o /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Vendor/VendorViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/Objects-normal/i386/InvViewController.o /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Invitation/InvViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/Objects-normal/i386/BudgetViewController.o /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Budget/BudgetViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/Objects-normal/i386/Budgetlist.o /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Budget/Manage\ Budget/Budgetlist/Budgetlist.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/Objects-normal/i386/AddTaskViewController.o /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/ToDoList/AddTask/AddTaskViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/Objects-normal/i386/SendIndividuallyViewController.o /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Invitation/Individually/SendIndividuallyViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/Objects-normal/i386/DetailBudget.o /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Budget/DetailBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/Objects-normal/i386/BudgetlistCC.o /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Budget/Manage\ Budget/Budgetlist/BudgetlistCC/BudgetlistCC.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/Objects-normal/i386/EditBudget.o /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Budget/Manage\ Budget/EditBudget/EditBudget.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cLd /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Products/Debug-iphonesimulator/WedingProj.app/WedingProj normal i386
@@ -40,6 +40,7 @@ cCompileXIB /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Vendor/VendorView
 cCopyStringsFile /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Products/Debug-iphonesimulator/WedingProj.app/en.lproj/InfoPlist.strings WedingProj/en.lproj/InfoPlist.strings
 cCompileXIB /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Budget/DetailBudget.xib
 cCpResource Images/checkImg/index2.jpg Build/Products/Debug-iphonesimulator/WedingProj.app/index2.jpg
+cCompileXIB /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Budget/Manage\ Budget/EditBudget/EditBudget.xib
 cCompileXIB /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Invitation/GroupWise/SelectGroup/SelectViewController.xib
 cCompileXIB /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Budget/Manage\ Budget/Customcell/Customcell.xib
 cCompileXIB /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Budget/CalculateBudget/CalculateBudget.xib
@@ -48,18 +49,17 @@ cCompileXIB /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Invitation/GroupW
 cCompileXIB /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Home/HomeViewController.xib
 cCompileXIB /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/ToDoList/cell/Cell3.xib
 cCompileXIB /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Budget/Manage\ Budget/Budgetlist/BudgetlistCC/BudgetlistCC.xib
-cCompileXIB /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Budget/Manage\ Budget/EditBudget/EditBudget.xib
 cCompileXIB /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Invitation/Individually/SendIndividuallyViewController.xib
 cCompileXIB /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Invitation/InvViewController.xib
 cCompileXIB /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/ToDoList/AddTask/AddTaskViewController.xib
 cCompileXIB /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Event/Cell/Cell2.xib
+cCompileXIB /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Event/AddEvent/AddEventViewController.xib
 cCompileXIB /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Budget/Manage\ Budget/ManageBudget.xib
 cCompileXIB /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Invitation/GroupWise/SendInv/InvitationViewController.xib
 cCompileXIB /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Welcome/WelcomeViewController.xib
 cCompileXIB /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Invitation/Individually/cell/Cell1.xib
 cCompileXIB /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Guest/GuestViewController.xib
 cCompileAssetCatalog /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Products/Debug-iphonesimulator/WedingProj.app /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/WedingProj/Images.xcassets
-cCompileXIB /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Event/AddEvent/AddEventViewController.xib
 cProcessInfoPlistFile /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Products/Debug-iphonesimulator/WedingProj.app/Info.plist /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/WedingProj/WedingProj-Info.plist
 cGenerateDSYMFile /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Products/Debug-iphonesimulator/WedingProj.app.dSYM /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Products/Debug-iphonesimulator/WedingProj.app/WedingProj
 cTouch /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Products/Debug-iphonesimulator/WedingProj.app
@@ -305,8 +305,8 @@ t1393333684
 s736
 
 N/Users/macmini2/Desktop/myproj1/Wedsimple Project/Budget/DetailBudget.m
-c00000000530C9B8E00000000000003B8
-t1393335182
+c00000000530CA3E400000000000003B8
+t1393337316
 s952
 
 N/Users/macmini2/Desktop/myproj1/Wedsimple Project/Budget/DetailBudget.xib
@@ -360,18 +360,18 @@ t1393319664
 s3192
 
 N/Users/macmini2/Desktop/myproj1/Wedsimple Project/Budget/Manage Budget/EditBudget/EditBudget.h
-c00000000530CA0DB0000000000000459
-t1393336539
-s1113
+c00000000530CA3E400000000000004D5
+t1393337316
+s1237
 
 N/Users/macmini2/Desktop/myproj1/Wedsimple Project/Budget/Manage Budget/EditBudget/EditBudget.m
-c00000000530CA0DB0000000000000437
-t1393336539
-s1079
+c00000000530CA3E400000000000008BA
+t1393337316
+s2234
 
 N/Users/macmini2/Desktop/myproj1/Wedsimple Project/Budget/Manage Budget/EditBudget/EditBudget.xib
-c00000000530CA0DB00000000000047DF
-t1393336539
+c00000000530CA3E400000000000047DF
+t1393337316
 s18399
 
 N/Users/macmini2/Desktop/myproj1/Wedsimple Project/Budget/Manage Budget/ManageBudget.h
@@ -407,8 +407,8 @@ t1393333713
 s80836
 
 N/Users/macmini2/Desktop/myproj1/Wedsimple Project/Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/Objects-normal/i386/AddTaskViewController.o
-t1393335184
-s87404
+t1393338131
+s94544
 
 N/Users/macmini2/Desktop/myproj1/Wedsimple Project/Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/Objects-normal/i386/AppDelegate.o
 t1393314887
@@ -451,11 +451,11 @@ t1393314886
 s48600
 
 N/Users/macmini2/Desktop/myproj1/Wedsimple Project/Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/Objects-normal/i386/DetailBudget.o
-t1393336541
+t1393337316
 s59328
 
 N/Users/macmini2/Desktop/myproj1/Wedsimple Project/Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/Objects-normal/i386/EditBudget.o
-t1393336541
+t1393337316
 s61308
 
 N/Users/macmini2/Desktop/myproj1/Wedsimple Project/Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/Objects-normal/i386/EventViewController.o
@@ -495,7 +495,7 @@ t1393314887
 s72580
 
 N/Users/macmini2/Desktop/myproj1/Wedsimple Project/Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/Objects-normal/i386/TodolistViewController.o
-t1393335184
+t1393337316
 s81052
 
 N/Users/macmini2/Desktop/myproj1/Wedsimple Project/Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/Objects-normal/i386/VendorViewController.o
@@ -624,11 +624,11 @@ t1393314901
 s525
 
 N/Users/macmini2/Desktop/myproj1/Wedsimple Project/Build/Products/Debug-iphonesimulator/WedingProj.app
-t1393336548
+t1393338131
 s1224
 
 N/Users/macmini2/Desktop/myproj1/Wedsimple Project/Build/Products/Debug-iphonesimulator/WedingProj.app.dSYM
-t1393335196
+t1393338107
 s102
 
 N/Users/macmini2/Desktop/myproj1/Wedsimple Project/Build/Products/Debug-iphonesimulator/WedingProj.app/AddEventViewController 4.55.59 PM.nib
@@ -636,12 +636,12 @@ t2
 s0
 
 N/Users/macmini2/Desktop/myproj1/Wedsimple Project/Build/Products/Debug-iphonesimulator/WedingProj.app/AddEventViewController.nib
-t1393336548
+t1393337316
 s5425
 
 N/Users/macmini2/Desktop/myproj1/Wedsimple Project/Build/Products/Debug-iphonesimulator/WedingProj.app/AddTaskViewController.nib
-t1393335191
-s5600
+t1393337652
+s5599
 
 N/Users/macmini2/Desktop/myproj1/Wedsimple Project/Build/Products/Debug-iphonesimulator/WedingProj.app/BudgetViewController.nib
 t1393315868
@@ -684,7 +684,7 @@ t1393333719
 s4335
 
 N/Users/macmini2/Desktop/myproj1/Wedsimple Project/Build/Products/Debug-iphonesimulator/WedingProj.app/EditBudget.nib
-t1393336548
+t1393337316
 s6892
 
 N/Users/macmini2/Desktop/myproj1/Wedsimple Project/Build/Products/Debug-iphonesimulator/WedingProj.app/EventViewController.nib
@@ -740,8 +740,8 @@ t1393314899
 s836
 
 N/Users/macmini2/Desktop/myproj1/Wedsimple Project/Build/Products/Debug-iphonesimulator/WedingProj.app/WedingProj
-t1393336542
-s178464
+t1393338131
+s182840
 
 N/Users/macmini2/Desktop/myproj1/Wedsimple Project/Build/Products/Debug-iphonesimulator/WedingProj.app/WelcomeViewController.nib
 t1393314899
@@ -775,8 +775,8 @@ t1393333684
 s4126
 
 N/Users/macmini2/Desktop/myproj1/Wedsimple Project/Event/AddEvent/AddEventViewController.xib
-c00000000530CA0DB0000000000004895
-t1393336539
+c00000000530CA3E40000000000004895
+t1393337316
 s18581
 
 N/Users/macmini2/Desktop/myproj1/Wedsimple Project/Event/Cell/Cell2.h
@@ -955,19 +955,19 @@ t1393312492
 s3602
 
 N/Users/macmini2/Desktop/myproj1/Wedsimple Project/ToDoList/AddTask/AddTaskViewController.h
-c00000000530C9B1A000000000000054A
-t1393335066
-s1354
+c00000000530CA3E30000000000000584
+t1393337315
+s1412
 
 N/Users/macmini2/Desktop/myproj1/Wedsimple Project/ToDoList/AddTask/AddTaskViewController.m
-c00000000530C9B1A0000000000000FA1
-t1393335066
-s4001
+c00000000530CA71300000000000018E9
+t1393338131
+s6377
 
 N/Users/macmini2/Desktop/myproj1/Wedsimple Project/ToDoList/AddTask/AddTaskViewController.xib
-c00000000530C9B1A0000000000004EAA
-t1393335066
-s20138
+c00000000530CA5320000000000004ED9
+t1393337650
+s20185
 
 N/Users/macmini2/Desktop/myproj1/Wedsimple Project/ToDoList/TodolistViewController.h
 c00000000530C42EC00000000000001CA
@@ -1578,7 +1578,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies33a47e5cd8bcb841^f6458e5cd8bcb841^---0#1#1#--18"Check dependencies36"A53F2A19-3169-41FA-A0D3-EDA993B8F5BA-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesf33b7993debcb841^9f907993debcb841^---0#1#1#--18"Check dependencies36"E3ADC4FA-78F4-4BA4-97BF-BD3BCE9EE9AC-
 
 CCompileAssetCatalog /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Products/Debug-iphonesimulator/WedingProj.app /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/WedingProj/Images.xcassets
 s415007699.955515
@@ -1634,8 +1634,8 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection97"Compile
 b8D62E333-9EBF-49AF-8C1A-F2643CE183B4
 
 CCompileC Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/Objects-normal/i386/AddTaskViewController.o /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/ToDoList/AddTask/AddTaskViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s415027982.945417
-e415027984.219654
+s415030931.480152
+e415030931.616609
 r1
 xCompileC
 xBuild/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/Objects-normal/i386/AddTaskViewController.o
@@ -1646,8 +1646,8 @@ xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
 d/Users/macmini2/Desktop/myproj1/Wedsimple Project/ToDoList/AddTask/AddTaskViewController.m
 d/Users/macmini2/Desktop/myproj1/Wedsimple Project/ToDoList/AddTask/AddTaskViewController.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"Compile /Users/macmini2/Desktop/myproj1/Wedsimple Project/ToDoList/AddTask/AddTaskViewController.m237"CompileC Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/Objects-normal/i386/AddTaskViewController.o ToDoList/AddTask/AddTaskViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler6135f20ed3bcb841^c53b3810d3bcb841^---0#0#1#-19%DVTDocumentLocation2@108"file://localhost/Users/macmini2/Desktop/myproj1/Wedsimple%20Project/ToDoList/AddTask/AddTaskViewController.m0000000000000000^3967"CompileC Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/Objects-normal/i386/AddTaskViewController.o ToDoList/AddTask/AddTaskViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/macmini2/Desktop/myproj1/Wedsimple Project"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/macmini2/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/WedingProj-generated-files.hmap -I/Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/WedingProj-own-target-headers.hmap -I/Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/WedingProj-all-target-headers.hmap -iquote /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/WedingProj-project-headers.hmap -I/Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/DerivedSources/i386 -I/Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/DerivedSources -F/Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Products/Debug-iphonesimulator -include /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Intermediates/PrecompiledHeaders/WedingProj-Prefix-elqatamgypmbdecyymjpntzsbxau/WedingProj-Prefix.pch -MMD -MT dependencies -MF /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/Objects-normal/i386/AddTaskViewController.d --serialize-diagnostics /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/Objects-normal/i386/AddTaskViewController.dia -c /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/ToDoList/AddTask/AddTaskViewController.m -o /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/Objects-normal/i386/AddTaskViewController.o36"0FFAF63B-B47D-44AF-B9F5-1C27CD069ED8-
-b2A00209E-7BBA-4FF0-8F4C-3FFB53C08B17
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"Compile /Users/macmini2/Desktop/myproj1/Wedsimple Project/ToDoList/AddTask/AddTaskViewController.m237"CompileC Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/Objects-normal/i386/AddTaskViewController.o ToDoList/AddTask/AddTaskViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler64057b93debcb841^beda9d93debcb841^---0#0#1#-19%DVTDocumentLocation2@108"file://localhost/Users/macmini2/Desktop/myproj1/Wedsimple%20Project/ToDoList/AddTask/AddTaskViewController.m0000000000000000^3967"CompileC Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/Objects-normal/i386/AddTaskViewController.o ToDoList/AddTask/AddTaskViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/macmini2/Desktop/myproj1/Wedsimple Project"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/macmini2/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/WedingProj-generated-files.hmap -I/Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/WedingProj-own-target-headers.hmap -I/Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/WedingProj-all-target-headers.hmap -iquote /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/WedingProj-project-headers.hmap -I/Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/DerivedSources/i386 -I/Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/DerivedSources -F/Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Products/Debug-iphonesimulator -include /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Intermediates/PrecompiledHeaders/WedingProj-Prefix-elqatamgypmbdecyymjpntzsbxau/WedingProj-Prefix.pch -MMD -MT dependencies -MF /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/Objects-normal/i386/AddTaskViewController.d --serialize-diagnostics /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/Objects-normal/i386/AddTaskViewController.dia -c /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/ToDoList/AddTask/AddTaskViewController.m -o /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/Objects-normal/i386/AddTaskViewController.o36"EBD8DB5E-C5D1-48C2-AA3F-A37BF6012544-
+bBB93DBF1-F2DE-4C8B-9998-DC664EE30E51
 
 CCompileC Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/Objects-normal/i386/AppDelegate.o /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/WedingProj/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s415007686.814444
@@ -2382,13 +2382,13 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compili
 b9274FF3A-B241-499C-8448-D5467327C6F2
 
 CCompileXIB /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/ToDoList/AddTask/AddTaskViewController.xib
-s415027984.840106
-e415027991.658636
+s415030450.622388
+e415030452.918468
 r1
 xCompileXIB
 x/Users/macmini2/Desktop/myproj1/Wedsimple Project/ToDoList/AddTask/AddTaskViewController.xib
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection102"Compiling /Users/macmini2/Desktop/myproj1/Wedsimple Project/ToDoList/AddTask/AddTaskViewController.xib53"CompileXIB ToDoList/AddTask/AddTaskViewController.xibee27d710d3bcb841^209ba817d3bcb841^---0#0#1#-19%DVTDocumentLocation2@110"file://localhost/Users/macmini2/Desktop/myproj1/Wedsimple%20Project/ToDoList/AddTask/AddTaskViewController.xib0000000000000000^836"CompileXIB ToDoList/AddTask/AddTaskViewController.xib    cd "/Users/macmini2/Desktop/myproj1/Wedsimple Project"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 7.0 --output-format human-readable-text --compile /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Products/Debug-iphonesimulator/WedingProj.app/AddTaskViewController.nib /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/ToDoList/AddTask/AddTaskViewController.xib36"415111D9-2447-4D4E-99D1-22B63FB9BBB9-
-b2A00209E-7BBA-4FF0-8F4C-3FFB53C08B17
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection102"Compiling /Users/macmini2/Desktop/myproj1/Wedsimple Project/ToDoList/AddTask/AddTaskViewController.xib53"CompileXIB ToDoList/AddTask/AddTaskViewController.xiba5669fb2dcbcb841^2c48ebb4dcbcb841^---0#0#1#-19%DVTDocumentLocation2@110"file://localhost/Users/macmini2/Desktop/myproj1/Wedsimple%20Project/ToDoList/AddTask/AddTaskViewController.xib0000000000000000^836"CompileXIB ToDoList/AddTask/AddTaskViewController.xib    cd "/Users/macmini2/Desktop/myproj1/Wedsimple Project"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 7.0 --output-format human-readable-text --compile /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Products/Debug-iphonesimulator/WedingProj.app/AddTaskViewController.nib /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/ToDoList/AddTask/AddTaskViewController.xib36"6845E9B4-E5B4-4117-A419-1F4CF102B4B1-
+b5C2FD75B-83EF-40BE-A944-91BE3E27F73A
 
 CCompileXIB /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/ToDoList/TodolistViewController.xib
 s415007699.626441
@@ -2502,21 +2502,21 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Copy Bu
 b9274FF3A-B241-499C-8448-D5467327C6F2
 
 CGenerateDSYMFile /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Products/Debug-iphonesimulator/WedingProj.app.dSYM /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Products/Debug-iphonesimulator/WedingProj.app/WedingProj
-s415029348.580993
-e415029349.202291
+s415030931.747926
+e415030931.809666
 r1
 xGenerateDSYMFile
 x/Users/macmini2/Desktop/myproj1/Wedsimple Project/Build/Products/Debug-iphonesimulator/WedingProj.app.dSYM
 x/Users/macmini2/Desktop/myproj1/Wedsimple Project/Build/Products/Debug-iphonesimulator/WedingProj.app/WedingProj
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"Generate /Users/macmini2/Desktop/myproj1/Wedsimple Project/Build/Products/Debug-iphonesimulator/WedingProj.app.dSYM136"GenerateDSYMFile Build/Products/Debug-iphonesimulator/WedingProj.app.dSYM Build/Products/Debug-iphonesimulator/WedingProj.app/WedingProj6ccb9464d8bcb841^53ca3365d8bcb841^---0#0#1#-19%DVTDocumentLocation2@125"file://localhost/Users/macmini2/Desktop/myproj1/Wedsimple%20Project/Build/Products/Debug-iphonesimulator/WedingProj.app.dSYM/0000000000000000^716"GenerateDSYMFile Build/Products/Debug-iphonesimulator/WedingProj.app.dSYM Build/Products/Debug-iphonesimulator/WedingProj.app/WedingProj    cd "/Users/macmini2/Desktop/myproj1/Wedsimple Project"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Products/Debug-iphonesimulator/WedingProj.app/WedingProj -o /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Products/Debug-iphonesimulator/WedingProj.app.dSYM36"D2340DF7-B7AF-4166-97D5-6D27F9A9553A-
-b26563E37-ACCE-467D-81CD-7B1E7D3BA513
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"Generate /Users/macmini2/Desktop/myproj1/Wedsimple Project/Build/Products/Debug-iphonesimulator/WedingProj.app.dSYM136"GenerateDSYMFile Build/Products/Debug-iphonesimulator/WedingProj.app.dSYM Build/Products/Debug-iphonesimulator/WedingProj.app/WedingProj698bbf93debcb841^7846cf93debcb841^---0#0#1#-19%DVTDocumentLocation2@125"file://localhost/Users/macmini2/Desktop/myproj1/Wedsimple%20Project/Build/Products/Debug-iphonesimulator/WedingProj.app.dSYM/0000000000000000^716"GenerateDSYMFile Build/Products/Debug-iphonesimulator/WedingProj.app.dSYM Build/Products/Debug-iphonesimulator/WedingProj.app/WedingProj    cd "/Users/macmini2/Desktop/myproj1/Wedsimple Project"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Products/Debug-iphonesimulator/WedingProj.app/WedingProj -o /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Products/Debug-iphonesimulator/WedingProj.app.dSYM36"6D3A594D-5CB5-42FB-B718-61216331DF13-
+bBB93DBF1-F2DE-4C8B-9998-DC664EE30E51
 
 CGenerateDSYMFile /Users/macmini2/Google\ Drive/Wedsimple\ Project/Build/Products/Debug-iphonesimulator/WedingProj.app.dSYM /Users/macmini2/Google\ Drive/Wedsimple\ Project/Build/Products/Debug-iphonesimulator/WedingProj.app/WedingProj
 r0
 
 CLd /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Products/Debug-iphonesimulator/WedingProj.app/WedingProj normal i386
-s415029341.581719
-e415029342.169792
+s415030931.626643
+e415030931.732479
 r1
 xLd
 x/Users/macmini2/Desktop/myproj1/Wedsimple Project/Build/Products/Debug-iphonesimulator/WedingProj.app/WedingProj
@@ -2608,8 +2608,8 @@ d/usr/lib/system/libsystem_notify.dylib
 d/usr/lib/system/libsystem_sandbox.dylib
 d/usr/lib/system/libunc.dylib
 d/usr/lib/system/libunwind.dylib
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection117"Link /Users/macmini2/Desktop/myproj1/Wedsimple Project/Build/Products/Debug-iphonesimulator/WedingProj.app/WedingProj77"Ld Build/Products/Debug-iphonesimulator/WedingProj.app/WedingProj normal i386ee06955dd8bcb841^89782b5ed8bcb841^---0#0#1#--1492"Ld Build/Products/Debug-iphonesimulator/WedingProj.app/WedingProj normal i386    cd "/Users/macmini2/Desktop/myproj1/Wedsimple Project"    setenv IPHONEOS_DEPLOYMENT_TARGET 7.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -L/Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Products/Debug-iphonesimulator -F/Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Products/Debug-iphonesimulator -filelist /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/Objects-normal/i386/WedingProj.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=7.0 -framework CoreGraphics -framework UIKit -framework Foundation -Xlinker -dependency_info -Xlinker /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/Objects-normal/i386/WedingProj_dependency_info.dat -o /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Products/Debug-iphonesimulator/WedingProj.app/WedingProj36"F7B4E4F1-D151-4FAB-90BD-CA01E29CB2DF-
-b26563E37-ACCE-467D-81CD-7B1E7D3BA513
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection117"Link /Users/macmini2/Desktop/myproj1/Wedsimple Project/Build/Products/Debug-iphonesimulator/WedingProj.app/WedingProj77"Ld Build/Products/Debug-iphonesimulator/WedingProj.app/WedingProj normal i386747ca093debcb841^e083bb93debcb841^---0#0#1#--1492"Ld Build/Products/Debug-iphonesimulator/WedingProj.app/WedingProj normal i386    cd "/Users/macmini2/Desktop/myproj1/Wedsimple Project"    setenv IPHONEOS_DEPLOYMENT_TARGET 7.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -L/Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Products/Debug-iphonesimulator -F/Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Products/Debug-iphonesimulator -filelist /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/Objects-normal/i386/WedingProj.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=7.0 -framework CoreGraphics -framework UIKit -framework Foundation -Xlinker -dependency_info -Xlinker /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Intermediates/WedingProj.build/Debug-iphonesimulator/WedingProj.build/Objects-normal/i386/WedingProj_dependency_info.dat -o /Users/macmini2/Desktop/myproj1/Wedsimple\ Project/Build/Products/Debug-iphonesimulator/WedingProj.app/WedingProj36"B7653780-9DE3-49AC-8A65-1C00DBF7D1E8-
+bBB93DBF1-F2DE-4C8B-9998-DC664EE30E51
 
 CLd /Users/macmini2/Google\ Drive/Wedsimple\ Project/Build/Products/Debug-iphonesimulator/WedingProj.app/WedingProj normal i386
 r0

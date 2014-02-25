@@ -39,9 +39,9 @@
     _pickerVw.showsSelectionIndicator=YES;
     [_datetxt setInputView:_datepickerView];
     [_categorytxt setInputView:_respondingView];
-    [_eventtxt setInputView:_respondingView];
-    [_vendortxt setInputView:_respondingView];
-    [_statustxt setInputView:_respondingView];
+    [self.eventtxt setInputView:_respondingView];
+    [self.vendortxt setInputView:_respondingView];
+    [self.statustxt setInputView:_respondingView];
     _categorytxt.tag=1;
     _eventtxt.tag=2;
     _vendortxt.tag=3;
@@ -97,25 +97,23 @@
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
    // NSInteger rowCount;
-    if (_pickerVw.tag==1) {
+    if (self.pickerVw.tag==1) {
         //rowCount=[pkarray count];
         return [pkarray count];
     }
-    if (_pickerVw.tag==2) {
+    if (self.pickerVw.tag==2) {
         //rowCount=[eventarray count];
         return [eventarray count];
     }
-    if (_pickerVw.tag==3) {
+    if (self.pickerVw.tag==3) {
         //rowCount=[vendorarray count];
         return [vendorarray count];
     }
-    else
-    {
-        //rowCount=[statusarray count];
+    if (self.pickerVw.tag ==4) {
         return [statusarray count];
     }
+    return 0;
     
-    //return rowCount;
 }
 
 
