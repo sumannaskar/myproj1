@@ -57,7 +57,8 @@
         NSArray* array = [nib instantiateWithOwner:self options:nil];
         cell = [array objectAtIndex:0];
     }
-    
+    cell.event.text =@"event";
+    cell.budget.text=@"budget";
     return cell;
 }
 
