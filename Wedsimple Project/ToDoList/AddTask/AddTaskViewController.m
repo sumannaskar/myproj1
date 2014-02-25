@@ -92,25 +92,30 @@
 }
 
 
-
+ 
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
-    NSInteger rowCount;
+   // NSInteger rowCount;
     if (_pickerVw.tag==1) {
-        rowCount=[pkarray count];
+        //rowCount=[pkarray count];
+        return [pkarray count];
     }
     if (_pickerVw.tag==2) {
-        rowCount=[eventarray count];
+        //rowCount=[eventarray count];
+        return [eventarray count];
     }
     if (_pickerVw.tag==3) {
-        rowCount=[vendorarray count];
+        //rowCount=[vendorarray count];
+        return [vendorarray count];
     }
-    if (_pickerVw.tag==4) {
-        rowCount=[statusarray count];
+    else
+    {
+        //rowCount=[statusarray count];
+        return [statusarray count];
     }
     
-    return rowCount;
+    //return rowCount;
 }
 
 
@@ -193,7 +198,7 @@
             
         }
         
-        [_eventtxt resignFirstResponder];
+        [_vendortxt resignFirstResponder];
         
     }
     if (_donebtn.tag==4) {
