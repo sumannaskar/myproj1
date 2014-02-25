@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EditBudget : UIViewController
+@interface EditBudget : UIViewController<UITextFieldDelegate,UITextViewDelegate,UIPickerViewDataSource,UIPickerViewDelegate>
 {
     
     IBOutlet UIImageView *background;
@@ -23,12 +23,22 @@
     IBOutlet UILabel *info;
     IBOutlet UITextView *infotext;
     IBOutlet UIButton *save;
+    IBOutlet UIView *respondingView;
+    IBOutlet UIPickerView *pickerVw;
+    IBOutlet UIView *datepickerView;
+    IBOutlet UIDatePicker *datepickerVW;
+    IBOutlet UILabel *vendername;
+    IBOutlet UITextField *vendernametext;
+    NSArray *pkarray;//delete after use
     
 
     
 }
 - (IBAction)save:(id)sender;
-
+- (IBAction)done:(id)sender;
+- (IBAction)cancel:(UIBarButtonItem *)sender;
+- (IBAction)donedate:(id)sender;
+- (IBAction)canceldate:(UIBarButtonItem *)sender;
 
 
 @end
