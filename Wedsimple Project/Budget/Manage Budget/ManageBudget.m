@@ -7,6 +7,7 @@
 //
 
 #import "ManageBudget.h"
+#import "Customcell.h"
 
 @interface ManageBudget ()
 
@@ -33,6 +34,31 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    // Return the number of sections.
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+        return 50;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *simpleTableIdentifier = @"SimpleTableCell";
+    
+    Customcell *cell= (Customcell *)[tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    if (cell == nil)
+    {
+        UINib* nib = [UINib nibWithNibName:@"Customcell" bundle:nil];
+        NSArray* array = [nib instantiateWithOwner:self options:nil];
+        cell = [array objectAtIndex:0];
+    }
+    
+    return cell;
 }
 
 @end
