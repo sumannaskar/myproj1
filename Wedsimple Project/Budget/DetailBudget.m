@@ -7,6 +7,7 @@
 //
 
 #import "DetailBudget.h"
+#import "EditBudget.h"
 
 @interface DetailBudget ()
 
@@ -39,5 +40,10 @@
 }
 
 - (IBAction)edit:(id)sender {
+    
+    EditBudget *EditBudget_=[[EditBudget alloc]init];
+    [self.navigationController pushViewController:EditBudget_ animated:YES];
+    
+    
 }
 @end
