@@ -28,9 +28,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    
+    nametxt.delegate=self;
+    budgettxt.delegate=self;
+    venuetxt.delegate=self;
     _datetxt.delegate=self;
      _dateendtxt.delegate=self;
+    
     _datetxt.tag=1;
     _dateendtxt.tag=2;
     
@@ -49,11 +52,19 @@
     _donedatebtn.tag=1;
     
 }
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    
+    [textField resignFirstResponder];
+    
+    return YES;
+}
+
 - (void)textFieldDidBeginEditing:(UITextField *)textField
 {
     if (textField.tag==1) {
         _donedatebtn.tag=1;
         _canceldatebtn.tag=1;
+        
     }
     if (textField.tag==2) {
         _donedatebtn.tag=2;
