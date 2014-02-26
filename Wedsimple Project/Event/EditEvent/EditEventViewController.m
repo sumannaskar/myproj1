@@ -27,7 +27,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
+    NSLog(@"%@",self.venuestr);
     nametxt.delegate=self;
     budgettxt.delegate=self;
     venuetxt.delegate=self;
@@ -49,6 +49,7 @@
     [self.datepickerVW setDate:[NSDate date]];
     
     pkarray=[[NSArray alloc]initWithObjects:@"Formal",@"Casual", nil];
+    [self alreadyinrecord];
     
 }
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
@@ -175,6 +176,19 @@
     [dateFormatter setDateFormat:@"dd'/'MM'/'yyyy hh:mm a"];
     NSString *formattedDate = [dateFormatter stringFromDate:date];
     return formattedDate;
+}
+-(void)alreadyinrecord
+{
+    nametxt.text=self.eventnamestr;
+    self.datetxt.text=self.startstr;
+    self.dateendtxt.text=self.endstr;
+    self.dresscodetxt.text=self.dresscodestr;
+    venuetxt.text=self.venuestr;
+    budgettxt.text=self.budgetstr;
+    
+    
+    
+    
 }
 
 @end

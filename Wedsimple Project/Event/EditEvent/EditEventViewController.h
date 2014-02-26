@@ -20,6 +20,13 @@
     IBOutlet UITextField *budgettxt;
     
 }
+@property (strong, nonatomic) NSString *eventnamestr;
+@property (strong, nonatomic) NSString *startstr;
+@property (strong, nonatomic) NSString *endstr;
+@property (strong, nonatomic) NSString *dresscodestr;
+@property (strong, nonatomic) NSString *venuestr;
+@property (strong, nonatomic) NSString *budgetstr;
+
 
 @property (strong, nonatomic) IBOutlet UITextField *dresscodetxt;
 
