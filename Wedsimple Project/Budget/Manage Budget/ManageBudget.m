@@ -9,6 +9,7 @@
 #import "ManageBudget.h"
 #import "Customcell.h"
 #import "DetailBudget.h"
+#import "DeleteBudget.h"
 
 @interface ManageBudget ()
 
@@ -27,10 +28,14 @@
 
 - (void)viewDidLoad
 {
+    
+   // UIToolbar *toolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 524, 320, 44)];
+ 
+    
+    
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
 }
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -70,6 +75,14 @@
     
 }
 
-
+- (IBAction)addBudget:(id)sender
+{
+    
+}
+- (IBAction)deleteBudget:(UIBarButtonItem *)sender
+{
+    DeleteBudget *DeleteBudget_ = [[DeleteBudget alloc]init];
+    [self.navigationController pushViewController:DeleteBudget_ animated:YES];
+}
 
 @end
