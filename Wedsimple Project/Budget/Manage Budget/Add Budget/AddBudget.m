@@ -27,12 +27,105 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [paymentduedatetext setInputView:datepickerView];
+    [vendernametext setInputView:respondingView];
+    pkarray=[[NSArray alloc]initWithObjects:@"A",@"B", nil];
+    [datepickerVW setDate:[NSDate date]];
 }
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    
+    [textField resignFirstResponder];
+    
+    return YES;
+}
+- (NSString *)formatDate:(NSDate *)date
+{
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateStyle:NSDateFormatterShortStyle];
+    [dateFormatter setDateFormat:@"dd'/'MM'/'yyyy hh:mm a"];
+    NSString *formattedDate = [dateFormatter stringFromDate:date];
+    return formattedDate;
+}
+
+#pragma -pickerview delecates
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+{
+    return 1;
+}
+
+
+
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+{
+    if (pickerView) {
+        return [pkarray count];
+    }
+    
+    return 0;
+}
+
+
+
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+
+{
+    // return [location objectAtIndex:row];
+    if (pickerView) {
+        return [pkarray objectAtIndex:row];
+    }
+    
+    else
+    {
+        return [pkarray objectAtIndex:row];
+    }
+}
+
+
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
+{
+    
+    vendernametext.text=[pkarray objectAtIndex:row];
+    
+    
+}
+
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)save:(id)sender {
+    
+    
+}
+
+- (IBAction)done:(id)sender
+{
+    if (!(vendernametext.text.length>0)) {
+        
+        vendernametext.text=[pkarray objectAtIndex:0];
+    }
+    [vendernametext resignFirstResponder];
+    
+}
+- (IBAction)cancel:(UIBarButtonItem *)sender
+{
+    vendernametext.text=@"";
+    [vendernametext resignFirstResponder];
+}
+- (IBAction)donedate:(id)sender
+{
+    paymentduedatetext.text=[self formatDate:datepickerVW.date];
+    [paymentduedatetext resignFirstResponder];
+}
+- (IBAction)canceldate:(UIBarButtonItem *)sender
+{
+    paymentduedatetext.text=@"";
+    [paymentduedatetext resignFirstResponder];
+    
 }
 
 @end
