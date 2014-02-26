@@ -44,7 +44,6 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
  {
-
      static NSString *cellidentifire;
      UITableViewCell *cell;
      cell=[tableView dequeueReusableCellWithIdentifier:cellidentifire];
