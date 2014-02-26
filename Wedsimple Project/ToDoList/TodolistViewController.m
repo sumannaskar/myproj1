@@ -29,8 +29,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    UIBarButtonItem *add=[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(Add:)];
-    [self.navigationItem setRightBarButtonItem:add];
+//    UIBarButtonItem *add=[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(Add:)];
+//    [self.navigationItem setRightBarButtonItem:add];
     isLoad = YES;
     checkImage = [[NSMutableArray alloc]init];
     EventScroll.delegate = self;
@@ -43,6 +43,9 @@
 {
     AddTaskViewController *AddeventVc=[[AddTaskViewController alloc] init];
     [self.navigationController pushViewController:AddeventVc animated:YES];
+}
+
+- (IBAction)Delete:(UIBarButtonItem *)sender {
 }
 
 - (void)didReceiveMemoryWarning
@@ -182,5 +185,6 @@
         
     }
 }
+
 
 @end
