@@ -12,9 +12,15 @@
 {
     IBOutlet UITableView *GuestTable;
     
-    
     NSMutableArray *checkImage;
+     NSDictionary *json;
     
+     NSMutableArray *Gid;
+     NSMutableArray *Gname;
+     NSMutableArray *role;
+     NSMutableArray *email;
+     NSMutableArray *GroupId;
+     NSMutableArray *NoOfPerson;
 }
 - (IBAction)DeleteAction:(UIBarButtonItem *)sender;
 - (IBAction)AddAction:(UIBarButtonItem *)sender;

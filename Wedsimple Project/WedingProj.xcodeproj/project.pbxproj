@@ -58,6 +58,8 @@
 		4B1653BE18BB6766007A66A8 /* Cell3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B1653BD18BB6766007A66A8 /* Cell3.xib */; };
 		4BDA2E8018BDD79E00C17E43 /* AddGuestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDA2E7E18BDD79E00C17E43 /* AddGuestViewController.m */; };
 		4BDA2E8118BDD79E00C17E43 /* AddGuestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BDA2E7F18BDD79E00C17E43 /* AddGuestViewController.xib */; };
+		4BDA2E8618BE105500C17E43 /* EditGuestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDA2E8418BE105500C17E43 /* EditGuestViewController.m */; };
+		4BDA2E8718BE105500C17E43 /* EditGuestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BDA2E8518BE105500C17E43 /* EditGuestViewController.xib */; };
 		7AE7B6A018BC7D8000D54692 /* CalculateBudget.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE7B69618BC7D8000D54692 /* CalculateBudget.m */; };
 		7AE7B6A118BC7D8000D54692 /* CalculateBudget.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE7B69718BC7D8000D54692 /* CalculateBudget.xib */; };
 		7AE7B6A218BC7D8000D54692 /* Customcell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE7B69B18BC7D8000D54692 /* Customcell.m */; };
@@ -170,6 +172,9 @@
 		4BDA2E7D18BDD79E00C17E43 /* AddGuestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddGuestViewController.h; path = Guest/AddGuest/AddGuestViewController.h; sourceTree = "<group>"; };
 		4BDA2E7E18BDD79E00C17E43 /* AddGuestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddGuestViewController.m; path = Guest/AddGuest/AddGuestViewController.m; sourceTree = "<group>"; };
 		4BDA2E7F18BDD79E00C17E43 /* AddGuestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddGuestViewController.xib; path = Guest/AddGuest/AddGuestViewController.xib; sourceTree = "<group>"; };
+		4BDA2E8318BE105500C17E43 /* EditGuestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditGuestViewController.h; path = Guest/Edit/EditGuestViewController.h; sourceTree = "<group>"; };
+		4BDA2E8418BE105500C17E43 /* EditGuestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditGuestViewController.m; path = Guest/Edit/EditGuestViewController.m; sourceTree = "<group>"; };
+		4BDA2E8518BE105500C17E43 /* EditGuestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EditGuestViewController.xib; path = Guest/Edit/EditGuestViewController.xib; sourceTree = "<group>"; };
 		7AE7B69518BC7D8000D54692 /* CalculateBudget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculateBudget.h; sourceTree = "<group>"; };
 		7AE7B69618BC7D8000D54692 /* CalculateBudget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculateBudget.m; sourceTree = "<group>"; };
 		7AE7B69718BC7D8000D54692 /* CalculateBudget.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalculateBudget.xib; sourceTree = "<group>"; };
@@ -346,6 +351,7 @@
 		4509171B18B773B60092245E /* Guest */ = {
 			isa = PBXGroup;
 			children = (
+				4BDA2E8218BE102F00C17E43 /* Edit */,
 				4BDA2E7718BDD70300C17E43 /* Add */,
 				4509171618B773B00092245E /* GuestViewController.h */,
 				4509171718B773B00092245E /* GuestViewController.m */,
@@ -556,6 +562,16 @@
 			name = Add;
 			sourceTree = "<group>";
 		};
+		4BDA2E8218BE102F00C17E43 /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				4BDA2E8318BE105500C17E43 /* EditGuestViewController.h */,
+				4BDA2E8418BE105500C17E43 /* EditGuestViewController.m */,
+				4BDA2E8518BE105500C17E43 /* EditGuestViewController.xib */,
+			);
+			name = Edit;
+			sourceTree = "<group>";
+		};
 		7AE7B69418BC7D8000D54692 /* CalculateBudget */ = {
 			isa = PBXGroup;
 			children = (
@@ -753,6 +769,7 @@
 				456ABACE18BDD9090022C03E /* EditEventViewController.xib in Resources */,
 				4509170E18B76DFD0092245E /* LoginViewController.xib in Resources */,
 				7AE7B6AB18BC9EEA00D54692 /* Budgetlist.xib in Resources */,
+				4BDA2E8718BE105500C17E43 /* EditGuestViewController.xib in Resources */,
 				4509173218B774740092245E /* BudgetViewController.xib in Resources */,
 				7AE7B6CF18BCB89600D54692 /* EventViewController.xib in Resources */,
 				4509173818B7749D0092245E /* VendorViewController.xib in Resources */,
@@ -816,6 +833,7 @@
 				7AFDB66218BDEEDF00CFE715 /* DeleteBudget.m in Sources */,
 				4B1653B618BB57B6007A66A8 /* Cell1.m in Sources */,
 				7AE7B6A018BC7D8000D54692 /* CalculateBudget.m in Sources */,
+				4BDA2E8618BE105500C17E43 /* EditGuestViewController.m in Sources */,
 				450916E618B765DD0092245E /* AppDelegate.m in Sources */,
 				7AE7B70318BCCD0F00D54692 /* EditBudget.m in Sources */,
 				7AE7B6D318BCBAA000D54692 /* AddEventViewController.m in Sources */,

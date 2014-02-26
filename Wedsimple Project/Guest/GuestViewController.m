@@ -8,7 +8,11 @@
 
 #import "GuestViewController.h"
 #import "AddGuestViewController.h"
+#import "EditGuestViewController.h"
 #define NIB_NAME @"Cell"
+#define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
+#define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=guest_all&event_id=3&apikey=micronix_10_2014_wedsimple_proj"]
+
 @interface GuestViewController ()
 
 @end
@@ -28,8 +32,82 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     //[GuestTable setRowHeight: 100.00];
+    json=[[NSDictionary alloc]init];
     
+     Gid=[[NSMutableArray alloc]init];
+     Gname=[[NSMutableArray alloc]init];
+     role=[[NSMutableArray alloc]init];
+     email=[[NSMutableArray alloc]init];
+     GroupId=[[NSMutableArray alloc]init];
+     NoOfPerson=[[NSMutableArray alloc]init];
     
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@",URL]];
+    //NSLog(@"my--%@",url);
+    
+   // [HUD showUIBlockingIndicatorWithText:@"Loading.."];
+    dispatch_async
+    (kBgQueue, ^
+     {
+         NSData* data = [NSData dataWithContentsOfURL:
+                         url];
+         NSString *tempstring = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+         
+
+             if (data.length<1 || [tempstring isEqualToString:@"null"])
+             {
+                 
+                 
+                 //[self performSelectorOnMainThread:@selector(serverFail) withObject:nil waitUntilDone:YES];
+                 
+             }
+             
+             else
+             {
+                 [self performSelectorOnMainThread:@selector(fetchedData:)
+                                        withObject:data waitUntilDone:YES];
+                
+            }
+     }
+     );
+}
+-(void)fetchedData:(NSData *)responseData
+{
+        NSError *error;
+        json = [NSJSONSerialization
+                JSONObjectWithData:responseData //1
+                
+                options:kNilOptions
+                error:&error];
+   // NSLog(@"%@",[json valueForKey:@"status"]);
+        
+       // [HUD hideUIBlockingIndicator];
+//    if ([[json valueForKey:@"status"]isEqualToString:@"No record found"]) {
+//        UIAlertView *nodata=[[UIAlertView alloc]initWithTitle:@"Wedding App" message:@"No record found" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles: nil];
+//        [nodata show];
+//    }
+//    else{
+        for(NSString *loc in [json valueForKey:@"guest_id"]) {
+            NSLog(@"%@",loc);
+            [Gid addObject:loc];
+        }
+        for(NSString *loc in [json valueForKey:@"name"]) {
+            [Gname addObject:loc];
+        }
+        for(NSString *loc in [json valueForKey:@"role"]) {
+            [role addObject:loc];
+        }
+        for(NSString *loc in [json valueForKey:@"email"]) {
+            [email addObject:loc];
+        }
+        for(NSString *loc in [json valueForKey:@"group_id"]) {
+            [GroupId addObject:loc];
+        }
+        for(NSString *loc in [json valueForKey:@"no_of_guest"]) {
+            [NoOfPerson addObject:loc];
+        }
+    [GuestTable reloadData];
+   // }
+        
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -41,7 +119,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 10;
+    return [Gname count];
 }
 //for normal table view....
 
@@ -54,8 +132,8 @@
  if (cell == nil) {
  cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifire];
  
-     cell.textLabel.text=@"Guest";
-     cell.textLabel.textAlignment = NSTextAlignmentCenter;
+     cell.textLabel.text=[Gname objectAtIndex:indexPath.row];
+     //cell.textLabel.textAlignment = NSTextAlignmentCenter;
      UIButton *detailsButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
      detailsButton.frame = CGRectMake(0, 0, 72, 37);
      [detailsButton setTitle:@"Details" forState:UIControlStateNormal];
@@ -144,56 +222,64 @@
 }
 
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    //return 60;
-    int cellheight=60;
-    if([[UIScreen mainScreen] bounds].size.height  < 600)
-    {
-        if ([[UIScreen mainScreen] bounds].size.height == 568)
-        {
-            
-            cellheight=cellheight+20;
-            
-            
-        }
-        else if ([[UIScreen mainScreen] bounds].size.height == 480)
-        {
-            
-            //no change
-            
-        }
-        else
-        {
-            //no change
-            
-        }
-        
-        
-    }
-    else
-    {
-        if ([[UIScreen mainScreen] bounds].size.height == 1024)
-        {
-            
-            cellheight=cellheight+10;
-            
-        }
-        else
-        {
-            
-            cellheight=cellheight+10;
-        }
-    }
-    // NSLog(@"cellheight-- %d",cellheight);
-    return cellheight;
-    
-    
-}
+//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    //return 60;
+//    //int cellheight=60;
+//    if([[UIScreen mainScreen] bounds].size.height  < 600)
+//    {
+//        if ([[UIScreen mainScreen] bounds].size.height == 568)
+//        {
+//            
+//           // cellheight=cellheight+20;
+//            
+//            
+//        }
+//        else if ([[UIScreen mainScreen] bounds].size.height == 480)
+//        {
+//            
+//            //no change
+//            
+//        }
+//        else
+//        {
+//            //no change
+//            
+//        }
+//        
+//        
+//    }
+//    else
+//    {
+//        if ([[UIScreen mainScreen] bounds].size.height == 1024)
+//        {
+//            
+//           // cellheight=cellheight+10;
+//            
+//        }
+//        else
+//        {
+//            
+//           // cellheight=cellheight+10;
+//        }
+//    }
+//    // NSLog(@"cellheight-- %d",cellheight);
+//    //return cellheight;
+//    
+//    
+//}
 
 -(void)ViewDetails:(UIButton*)button
 {
-    NSLog(@"%d",button.tag);
+    NSLog(@"%ld",(long)button.tag);
+    EditGuestViewController *EditguestVc=[[EditGuestViewController alloc] init];
+    
+    EditguestVc.nameString = [Gname objectAtIndex:button.tag];
+    EditguestVc.roleString = [role objectAtIndex:button.tag];
+    EditguestVc.emailString = [email objectAtIndex:button.tag];
+    EditguestVc.groupString = [GroupId objectAtIndex:button.tag];
+    EditguestVc.withString = [NoOfPerson objectAtIndex:button.tag];
+    [self.navigationController pushViewController:EditguestVc animated:YES];
 }
 - (void)didReceiveMemoryWarning
 {
