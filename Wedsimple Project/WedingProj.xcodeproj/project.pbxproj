@@ -36,6 +36,8 @@
 		4509173818B7749D0092245E /* VendorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4509173618B7749D0092245E /* VendorViewController.xib */; };
 		451EE6B418BB540B0098FC96 /* Cell2.m in Sources */ = {isa = PBXBuildFile; fileRef = 451EE6B318BB540B0098FC96 /* Cell2.m */; };
 		451EE6B618BB545C0098FC96 /* Cell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 451EE6B518BB545C0098FC96 /* Cell2.xib */; };
+		456ABACD18BDD9090022C03E /* EditEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 456ABACB18BDD9090022C03E /* EditEventViewController.m */; };
+		456ABACE18BDD9090022C03E /* EditEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 456ABACC18BDD9090022C03E /* EditEventViewController.xib */; };
 		4B16537518BB483E007A66A8 /* InvViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B16537318BB483D007A66A8 /* InvViewController.m */; };
 		4B16537618BB483E007A66A8 /* InvViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B16537418BB483D007A66A8 /* InvViewController.xib */; };
 		4B16539318BB4B6B007A66A8 /* SelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B16539118BB4B6B007A66A8 /* SelectViewController.m */; };
@@ -128,6 +130,9 @@
 		451EE6B218BB540B0098FC96 /* Cell2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cell2.h; path = Event/Cell/Cell2.h; sourceTree = "<group>"; };
 		451EE6B318BB540B0098FC96 /* Cell2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cell2.m; path = Event/Cell/Cell2.m; sourceTree = "<group>"; };
 		451EE6B518BB545C0098FC96 /* Cell2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Cell2.xib; path = Event/Cell/Cell2.xib; sourceTree = "<group>"; };
+		456ABACA18BDD9090022C03E /* EditEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditEventViewController.h; path = Event/EditEvent/EditEventViewController.h; sourceTree = "<group>"; };
+		456ABACB18BDD9090022C03E /* EditEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditEventViewController.m; path = Event/EditEvent/EditEventViewController.m; sourceTree = "<group>"; };
+		456ABACC18BDD9090022C03E /* EditEventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EditEventViewController.xib; path = Event/EditEvent/EditEventViewController.xib; sourceTree = "<group>"; };
 		4B16537218BB483D007A66A8 /* InvViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InvViewController.h; path = Invitation/InvViewController.h; sourceTree = "<group>"; };
 		4B16537318BB483D007A66A8 /* InvViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InvViewController.m; path = Invitation/InvViewController.m; sourceTree = "<group>"; };
 		4B16537418BB483D007A66A8 /* InvViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = InvViewController.xib; path = Invitation/InvViewController.xib; sourceTree = "<group>"; };
@@ -344,6 +349,7 @@
 		4509172718B7740F0092245E /* Event */ = {
 			isa = PBXGroup;
 			children = (
+				456ABAC918BDD8BF0022C03E /* EditEvent */,
 				4509172218B774090092245E /* EventViewController.h */,
 				4509172318B774090092245E /* EventViewController.m */,
 				7AE7B6CE18BCB89600D54692 /* EventViewController.xib */,
@@ -407,6 +413,16 @@
 				451EE6B518BB545C0098FC96 /* Cell2.xib */,
 			);
 			name = Cell;
+			sourceTree = "<group>";
+		};
+		456ABAC918BDD8BF0022C03E /* EditEvent */ = {
+			isa = PBXGroup;
+			children = (
+				456ABACA18BDD9090022C03E /* EditEventViewController.h */,
+				456ABACB18BDD9090022C03E /* EditEventViewController.m */,
+				456ABACC18BDD9090022C03E /* EditEventViewController.xib */,
+			);
+			name = EditEvent;
 			sourceTree = "<group>";
 		};
 		4B1652BD18BB2DD4007A66A8 /* cell */ = {
@@ -669,6 +685,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B1653A318BB4CAA007A66A8 /* index.jpg in Resources */,
+				456ABACE18BDD9090022C03E /* EditEventViewController.xib in Resources */,
 				4509170E18B76DFD0092245E /* LoginViewController.xib in Resources */,
 				7AE7B6AB18BC9EEA00D54692 /* Budgetlist.xib in Resources */,
 				4509173218B774740092245E /* BudgetViewController.xib in Resources */,
@@ -719,6 +736,7 @@
 				7AE7B6A418BC7D8000D54692 /* ManageBudget.m in Sources */,
 				7AE7B6A218BC7D8000D54692 /* Customcell.m in Sources */,
 				4B16539318BB4B6B007A66A8 /* SelectViewController.m in Sources */,
+				456ABACD18BDD9090022C03E /* EditEventViewController.m in Sources */,
 				4B16539D18BB4C1A007A66A8 /* Cell.m in Sources */,
 				4509170D18B76DFD0092245E /* LoginViewController.m in Sources */,
 				4BDA2E8018BDD79E00C17E43 /* AddGuestViewController.m in Sources */,

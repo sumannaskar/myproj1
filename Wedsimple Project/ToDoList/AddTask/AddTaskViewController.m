@@ -106,15 +106,15 @@
 {
        
     if (self.pickerVw.tag==1) {
-        //rowCount=[pkarray count];
+        
         return [pkarray count];
     }
     if (self.pickerVw.tag==2) {
-        //rowCount=[eventarray count];
+        
         return [eventarray count];
     }
     if (self.pickerVw.tag==3) {
-        //rowCount=[vendorarray count];
+        
         return [vendorarray count];
     }
     if (self.pickerVw.tag ==4) {
@@ -131,7 +131,7 @@
 {
     
     
-    // return [location objectAtIndex:row];
+   
     if (self.pickerVw.tag==1) {
         return [pkarray objectAtIndex:row];
     }
