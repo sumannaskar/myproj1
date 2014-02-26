@@ -17,8 +17,9 @@
                 <outlet property="infotext" destination="e5h-GS-bY5" id="ahp-TM-3PT"/>
                 <outlet property="paymentduedate" destination="skC-3B-y8B" id="VGi-yc-cK6"/>
                 <outlet property="paymentduedatetext" destination="pwn-sJ-YD4" id="qxY-sN-Wrl"/>
-                <outlet property="pickerVw" destination="qV5-xG-df8" id="nRZ-8w-5Dz"/>
-                <outlet property="respondingView" destination="64m-Qz-yTZ" id="8g4-Sk-9so"/>
+                <outlet property="picekrtoolbr" destination="NdF-Fx-d6a" id="kwk-UL-KYt"/>
+                <outlet property="pickerVw" destination="ZEi-cU-sTb" id="cto-bd-BDB"/>
+                <outlet property="respondingView" destination="KVf-ga-vga" id="UxF-Zf-a29"/>
                 <outlet property="save" destination="S5E-ue-K0Z" id="c2H-9O-cms"/>
                 <outlet property="totalamountdue" destination="aHc-DE-PrL" id="gPn-Yx-IlR"/>
                 <outlet property="totalamountduetext" destination="8jN-ZX-oea" id="pcK-br-3KG"/>
@@ -47,12 +48,18 @@
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Kmi-Hs-I5F"/>
+                    </connections>
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="UVb-1U-QYY">
                     <rect key="frame" x="127" y="268.99999999999994" width="178" height="30"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="O5D-UT-bZA"/>
+                    </connections>
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="2On-xg-6wd">
                     <rect key="frame" x="127" y="85" width="178" height="30"/>
@@ -95,6 +102,9 @@
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Jbw-lQ-k2v"/>
+                    </connections>
                 </textField>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Information :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qDa-TU-tc9">
                     <rect key="frame" x="20" y="333" width="97" height="21"/>
@@ -106,7 +116,7 @@
                     <rect key="frame" x="127" y="321" width="185" height="128"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
@@ -136,7 +146,7 @@
                         <!--2014-02-25 12:12:24 +0000-->
                     </date>
                     <timeZone key="timeZone" name="America/Los_Angeles">
-                        <mutableData key="data">
+                        <data key="data">
 VFppZgAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAC5AAAABAAAABCepkign7sVkKCGKqChmveQ
 y4kaoNIj9HDSYSYQ1v50INiArZDa/tGg28CQENzes6DdqayQ3r6VoN+JjpDgnneg4WlwkOJ+WaDjSVKQ
 5F47oOUpNJDmR1gg5xJREOgnOiDo8jMQ6gccIOrSFRDr5v4g7LH3EO3G4CDukdkQ76/8oPBxuxDxj96g
@@ -154,7 +164,7 @@ f5gqkAABAAECAwEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
 AQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
 AQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
 AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
-</mutableData>
+</data>
                     </timeZone>
                 </datePicker>
                 <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" id="56V-sY-9sO">
@@ -167,7 +177,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                             </connections>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="rYP-d2-ecW"/>
-                        <barButtonItem title="Done" width="71" id="PjR-Ot-hvB">
+                        <barButtonItem title="Done" width="72" id="PjR-Ot-hvB">
                             <connections>
                                 <action selector="donedate:" destination="-1" id="HqE-3x-3mV"/>
                             </connections>
@@ -178,27 +188,31 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>
-        <view contentMode="scaleToFill" id="64m-Qz-yTZ">
+        <view contentMode="scaleToFill" id="KVf-ga-vga">
             <rect key="frame" x="0.0" y="0.0" width="352" height="260"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <pickerView contentMode="scaleToFill" id="qV5-xG-df8">
+                <pickerView contentMode="scaleToFill" id="ZEi-cU-sTb">
                     <rect key="frame" x="0.0" y="44" width="352" height="216"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="xbe-lb-tWT"/>
+                        <outlet property="delegate" destination="-1" id="SGd-Im-BQF"/>
+                    </connections>
                 </pickerView>
-                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" id="BnX-ou-81t">
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" id="NdF-Fx-d6a">
                     <rect key="frame" x="0.0" y="0.0" width="352" height="44"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                     <items>
-                        <barButtonItem title="Cancel" id="n69-bL-gbg">
+                        <barButtonItem title="Cancel" id="BAY-A7-1Gq">
                             <connections>
-                                <action selector="cancel:" destination="-1" id="kBx-wL-kzF"/>
+                                <action selector="cancel:" destination="-1" id="ziS-Bm-ygi"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="2bl-ET-JXh"/>
-                        <barButtonItem title="Done" width="71" id="RE1-A6-t8A">
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="I0V-ke-Flf"/>
+                        <barButtonItem title="Done" width="60" id="J3y-i1-omG">
                             <connections>
-                                <action selector="done:" destination="-1" id="WvW-0J-1BS"/>
+                                <action selector="done:" destination="-1" id="jf5-zN-eVp"/>
                             </connections>
                         </barButtonItem>
                     </items>

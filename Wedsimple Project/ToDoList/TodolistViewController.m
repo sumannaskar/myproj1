@@ -27,8 +27,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSLog(@"sss");
-    NSLog(@"sss");
     // Do any additional setup after loading the view from its nib.
     UIBarButtonItem *add=[[UIBarButtonItem alloc]initWithTitle:@"Add" style:UIBarButtonItemStylePlain target:self action:@selector(Add:)];
     [self.navigationItem setRightBarButtonItem:add];

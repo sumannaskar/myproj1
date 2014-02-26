@@ -28,8 +28,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [paymentduedatetext setInputView:datepickerView];
-    [vendernametext setInputView:pickerVw];
-    pkarray=[[NSArray alloc]initWithObjects:@"Formal",@"Casual", nil];
+    [vendernametext setInputView:respondingView];
+    pkarray=[[NSArray alloc]initWithObjects:@"A",@"B", nil];
     [datepickerVW setDate:[NSDate date]];
 }
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
@@ -58,7 +58,11 @@
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
-    return [pkarray count];
+    if (pickerView) {
+         return [pkarray count];
+    }
+   
+    return 0;
 }
 
 
@@ -67,14 +71,21 @@
 
 {
     // return [location objectAtIndex:row];
+    if (pickerView) {
    return [pkarray objectAtIndex:row];
+    }
+    
+    else
+    {
+        return [pkarray objectAtIndex:row];
+    }
 }
 
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
     
-    //_dresscodetxt.text=[pkarray objectAtIndex:row];
+    vendernametext.text=[pkarray objectAtIndex:row];
     
     
 }
@@ -91,18 +102,27 @@
 
 - (IBAction)done:(id)sender
 {
+    if (!(vendernametext.text.length>0)) {
+        
+    vendernametext.text=[pkarray objectAtIndex:0];
+    }
+    [vendernametext resignFirstResponder];
     
 }
 - (IBAction)cancel:(UIBarButtonItem *)sender
 {
-    
+    vendernametext.text=@"";
+    [vendernametext resignFirstResponder];
 }
 - (IBAction)donedate:(id)sender
 {
-    
+    paymentduedatetext.text=[self formatDate:datepickerVW.date];
+    [paymentduedatetext resignFirstResponder];
 }
 - (IBAction)canceldate:(UIBarButtonItem *)sender
 {
+    paymentduedatetext.text=@"";
+    [paymentduedatetext resignFirstResponder];
     
 }
 

@@ -30,6 +30,7 @@
     IBOutlet UILabel *vendername;
     IBOutlet UITextField *vendernametext;
     NSArray *pkarray;//delete after use
+    IBOutlet UIToolbar *picekrtoolbr;
     
 
     

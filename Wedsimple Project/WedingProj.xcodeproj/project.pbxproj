@@ -75,6 +75,8 @@
 		7AE7B6FE18BCC71F00D54692 /* DetailBudget.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE7B6FC18BCC71F00D54692 /* DetailBudget.xib */; };
 		7AE7B70318BCCD0F00D54692 /* EditBudget.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE7B70118BCCD0F00D54692 /* EditBudget.m */; };
 		7AE7B70418BCCD0F00D54692 /* EditBudget.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE7B70218BCCD0F00D54692 /* EditBudget.xib */; };
+		7AFDB65C18BDD76F00CFE715 /* AddBudget.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFDB65A18BDD76F00CFE715 /* AddBudget.m */; };
+		7AFDB65D18BDD76F00CFE715 /* AddBudget.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AFDB65B18BDD76F00CFE715 /* AddBudget.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -187,6 +189,9 @@
 		7AE7B70018BCCD0F00D54692 /* EditBudget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditBudget.h; path = "Budget/Manage Budget/EditBudget/EditBudget.h"; sourceTree = "<group>"; };
 		7AE7B70118BCCD0F00D54692 /* EditBudget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditBudget.m; path = "Budget/Manage Budget/EditBudget/EditBudget.m"; sourceTree = "<group>"; };
 		7AE7B70218BCCD0F00D54692 /* EditBudget.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EditBudget.xib; path = "Budget/Manage Budget/EditBudget/EditBudget.xib"; sourceTree = "<group>"; };
+		7AFDB65918BDD76F00CFE715 /* AddBudget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddBudget.h; path = "Budget/Manage Budget/Add Budget/AddBudget.h"; sourceTree = "<group>"; };
+		7AFDB65A18BDD76F00CFE715 /* AddBudget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddBudget.m; path = "Budget/Manage Budget/Add Budget/AddBudget.m"; sourceTree = "<group>"; };
+		7AFDB65B18BDD76F00CFE715 /* AddBudget.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddBudget.xib; path = "Budget/Manage Budget/Add Budget/AddBudget.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -377,6 +382,7 @@
 				4509172E18B774740092245E /* BudgetViewController.h */,
 				4509172F18B774740092245E /* BudgetViewController.m */,
 				4509173018B774740092245E /* BudgetViewController.xib */,
+				7AFDB65818BDD6C300CFE715 /* Add Budget */,
 				7AE7B6FF18BCCCCB00D54692 /* Edit Budget */,
 				7AE7B6D518BCC6BD00D54692 /* detailBudget */,
 				7AE7B69418BC7D8000D54692 /* CalculateBudget */,
@@ -609,6 +615,16 @@
 			name = "Edit Budget";
 			sourceTree = "<group>";
 		};
+		7AFDB65818BDD6C300CFE715 /* Add Budget */ = {
+			isa = PBXGroup;
+			children = (
+				7AFDB65918BDD76F00CFE715 /* AddBudget.h */,
+				7AFDB65A18BDD76F00CFE715 /* AddBudget.m */,
+				7AFDB65B18BDD76F00CFE715 /* AddBudget.xib */,
+			);
+			name = "Add Budget";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -684,6 +700,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AFDB65D18BDD76F00CFE715 /* AddBudget.xib in Resources */,
 				4B1653A318BB4CAA007A66A8 /* index.jpg in Resources */,
 				456ABACE18BDD9090022C03E /* EditEventViewController.xib in Resources */,
 				4509170E18B76DFD0092245E /* LoginViewController.xib in Resources */,
@@ -761,6 +778,7 @@
 				4509173118B774740092245E /* BudgetViewController.m in Sources */,
 				7AE7B6AA18BC9EEA00D54692 /* Budgetlist.m in Sources */,
 				4B1653A918BB5192007A66A8 /* SendIndividuallyViewController.m in Sources */,
+				7AFDB65C18BDD76F00CFE715 /* AddBudget.m in Sources */,
 				7AE7B6AF18BCA35400D54692 /* BudgetlistCC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
