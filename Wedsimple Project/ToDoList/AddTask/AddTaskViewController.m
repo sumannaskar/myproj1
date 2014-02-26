@@ -29,23 +29,23 @@
     // Do any additional setup after loading the view from its nib.
     
     nametxt.delegate=self;
-    _datetxt.delegate=self;
-    _categorytxt.delegate=self;
-    _vendortxt.delegate=self;
-    _eventtxt.delegate=self;
-    _statustxt.delegate=self;
-    _pickerVw.dataSource=self;
-    _pickerVw.delegate=self;
-    _pickerVw.showsSelectionIndicator=YES;
-    [_datetxt setInputView:_datepickerView];
-    [_categorytxt setInputView:_respondingView];
+    self.datetxt.delegate=self;
+    self.categorytxt.delegate=self;
+    self.vendortxt.delegate=self;
+    self.eventtxt.delegate=self;
+    self.statustxt.delegate=self;
+    self.pickerVw.dataSource=self;
+    self.pickerVw.delegate=self;
+    self.pickerVw.showsSelectionIndicator=YES;
+    [self.datetxt setInputView:_datepickerView];
+    [self.categorytxt setInputView:_respondingView];
     [self.eventtxt setInputView:_respondingView];
     [self.vendortxt setInputView:_respondingView];
     [self.statustxt setInputView:_respondingView];
-    _categorytxt.tag=1;
-    _eventtxt.tag=2;
-    _vendortxt.tag=3;
-    _statustxt.tag=4;
+    self.categorytxt.tag=1;
+    self.eventtxt.tag=2;
+    self.vendortxt.tag=3;
+    self.statustxt.tag=4;
     
     
     scroll.contentSize=CGSizeMake(320, 500);
@@ -62,24 +62,24 @@
 - (void)textFieldDidBeginEditing:(UITextField *)textField
 {
     if (textField.tag==1) {
-        _pickerVw.tag=1;
-        _donebtn.tag=1;
-        _cancelbtn.tag=1;
+        self.pickerVw.tag=1;
+        self.donebtn.tag=1;
+        self.cancelbtn.tag=1;
     }
     if (textField.tag==2) {
-        _pickerVw.tag=2;
-        _donebtn.tag=2;
-        _cancelbtn.tag=2;
+        self.pickerVw.tag=2;
+        self.donebtn.tag=2;
+        self.cancelbtn.tag=2;
     }
     if (textField.tag==3) {
-        _pickerVw.tag=3;
-        _donebtn.tag=3;
-        _cancelbtn.tag=3;
+        self.pickerVw.tag=3;
+        self.donebtn.tag=3;
+        self.cancelbtn.tag=3;
     }
     if (textField.tag==4) {
-        _pickerVw.tag=4;
-        _donebtn.tag=4;
-        _cancelbtn.tag=4;
+        self.pickerVw.tag=4;
+        self.donebtn.tag=4;
+        self.cancelbtn.tag=4;
     }
 
 }
@@ -124,14 +124,14 @@
     
     
     // return [location objectAtIndex:row];
-    if (_pickerVw.tag==1) {
+    if (self.pickerVw.tag==1) {
         return [pkarray objectAtIndex:row];
     }
 
-    if (_pickerVw.tag==2) {
+    if (self.pickerVw.tag==2) {
        return [eventarray objectAtIndex:row];
     }
-    if (_pickerVw.tag==3) {
+    if (self.pickerVw.tag==3) {
         return [vendorarray objectAtIndex:row];
     }
     
@@ -146,20 +146,20 @@
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
 
-    if (_pickerVw.tag==1) {
-        _categorytxt.text=[pkarray objectAtIndex:row];
+    if (self.pickerVw.tag==1) {
+        self.categorytxt.text=[pkarray objectAtIndex:row];
     }
     
     
-    if (_pickerVw.tag==2) {
-        _eventtxt.text=[eventarray objectAtIndex:row];
+    if (self.pickerVw.tag==2) {
+        self.eventtxt.text=[eventarray objectAtIndex:row];
     }
     
-    if (_pickerVw.tag==3) {
-        _vendortxt.text=[vendorarray objectAtIndex:row];
+    if (self.pickerVw.tag==3) {
+        self.vendortxt.text=[vendorarray objectAtIndex:row];
     }
-    if (_pickerVw.tag==4) {
-        _statustxt.text=[statusarray objectAtIndex:row];
+    if (self.pickerVw.tag==4) {
+        self.statustxt.text=[statusarray objectAtIndex:row];
     }
     
     
@@ -168,45 +168,45 @@
 - (IBAction)done:(id)sender
 {
     
-    if (_donebtn.tag==1) {
-        if (!(_categorytxt.text.length>0)) {
+    if (self.donebtn.tag==1) {
+        if (!(self.categorytxt.text.length>0)) {
             
-            _categorytxt.text=[pkarray objectAtIndex:0];
+            self.categorytxt.text=[pkarray objectAtIndex:0];
             
         }
         
-        [_categorytxt resignFirstResponder];
+        [self.categorytxt resignFirstResponder];
         
     }
 
-    if (_donebtn.tag==2) {
-        if (!(_eventtxt.text.length>0)) {
+    if (self.donebtn.tag==2) {
+        if (!(self.eventtxt.text.length>0)) {
             
-            _eventtxt.text=[eventarray objectAtIndex:0];
+            self.eventtxt.text=[eventarray objectAtIndex:0];
             
         }
         
-        [_eventtxt resignFirstResponder];
+        [self.eventtxt resignFirstResponder];
 
     }
-    if (_donebtn.tag==3) {
-        if (!(_vendortxt.text.length>0)) {
+    if (self.donebtn.tag==3) {
+        if (!(self.vendortxt.text.length>0)) {
             
-            _vendortxt.text=[vendorarray objectAtIndex:0];
+            self.vendortxt.text=[vendorarray objectAtIndex:0];
             
         }
         
-        [_vendortxt resignFirstResponder];
+        [self.vendortxt resignFirstResponder];
         
     }
-    if (_donebtn.tag==4) {
-        if (!(_statustxt.text.length>0)) {
+    if (self.donebtn.tag==4) {
+        if (!(self.statustxt.text.length>0)) {
             
-            _statustxt.text=[statusarray objectAtIndex:0];
+            self.statustxt.text=[statusarray objectAtIndex:0];
             
         }
         
-        [_statustxt resignFirstResponder];
+        [self.statustxt resignFirstResponder];
         
     }
 
@@ -215,31 +215,31 @@
 - (IBAction)cancel:(UIBarButtonItem *)sender
 {
     
-    if (_cancelbtn.tag==1) {
+    if (self.cancelbtn.tag==1) {
         
-        _categorytxt.text=@"";
-        [_categorytxt resignFirstResponder];
-        
-    }
-    
-    if (_cancelbtn.tag==2) {
-        
-        _eventtxt.text=@"";
-        [_eventtxt resignFirstResponder];
+        self.categorytxt.text=@"";
+        [self.categorytxt resignFirstResponder];
         
     }
     
-    if (_cancelbtn.tag==3) {
+    if (self.cancelbtn.tag==2) {
         
-        _vendortxt.text=@"";
-        [_vendortxt resignFirstResponder];
+        self.eventtxt.text=@"";
+        [self.eventtxt resignFirstResponder];
         
     }
     
-    if (_cancelbtn.tag==1) {
+    if (self.cancelbtn.tag==3) {
         
-        _statustxt.text=@"";
-        [_statustxt resignFirstResponder];
+        self.vendortxt.text=@"";
+        [self.vendortxt resignFirstResponder];
+        
+    }
+    
+    if (self.cancelbtn.tag==1) {
+        
+        self.statustxt.text=@"";
+        [self.statustxt resignFirstResponder];
         
     }
 
@@ -260,17 +260,17 @@
 
 - (IBAction)donedate:(id)sender
 {
-    _datetxt.text=[self formatDate:_datepickerVW.date];
+    self.datetxt.text=[self formatDate:self.datepickerVW.date];
     // _datetxt.text=[NSString stringWithFormat:@"%@",_datepickerVW.date];
     
-    [_datetxt resignFirstResponder];
+    [self.datetxt resignFirstResponder];
     
     
 }
 - (IBAction)canceldate:(UIBarButtonItem *)sender
 {
-    _datetxt.text=@"";
-    [_datetxt resignFirstResponder];
+    self.datetxt.text=@"";
+    [self.datetxt resignFirstResponder];
 }
 - (NSString *)formatDate:(NSDate *)date
 {
