@@ -29,6 +29,7 @@
     // Do any additional setup after loading the view from its nib.
     
     nametxt.delegate=self;
+    informationtxt.delegate=self;
     self.datetxt.delegate=self;
     self.categorytxt.delegate=self;
     self.vendortxt.delegate=self;
@@ -259,6 +260,11 @@
     
     [textField resignFirstResponder];
     
+    return YES;
+}
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text
+{
+    [textView resignFirstResponder];
     return YES;
 }
 - (void)didReceiveMemoryWarning
