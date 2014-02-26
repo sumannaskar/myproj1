@@ -255,13 +255,15 @@
 -(void) Edit:(UIButton*)button
 {
     NSLog(@"%ld",(long)button.tag);
+    NSLog(@"%@",eventnamestr);
     EditEventViewController *EditeventVc=[[EditEventViewController alloc] init];
-    EditeventVc.eventnamestr=eventnamestr;
-    EditeventVc.startstr=startstr;
-    EditeventVc.endstr=endstr;
-    EditeventVc.dresscodestr=dresscodestr;
-    EditeventVc.venuestr=venuestr;
-    EditeventVc.budgetstr=budgetstr;
+     NSDictionary *tempdic=[raweventList objectAtIndex:button.tag];
+    EditeventVc.eventnamestr=[tempdic objectForKey:@"event_name"];;
+    EditeventVc.startstr=[tempdic objectForKey:@"start_time"];
+    EditeventVc.endstr=[tempdic objectForKey:@"end_time"];
+    EditeventVc.dresscodestr=[tempdic objectForKey:@"dress_code"];
+    EditeventVc.venuestr=[tempdic objectForKey:@"venue"];
+    EditeventVc.budgetstr=[tempdic objectForKey:@"budget"];
     [self.navigationController pushViewController:EditeventVc animated:YES];
 }
 
