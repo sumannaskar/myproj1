@@ -33,7 +33,6 @@
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    // Return the number of sections.
     return 1;
 }
 
@@ -45,21 +44,28 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
  {
      static NSString *cellidentifire;
+     
      UITableViewCell *cell;
      cell=[tableView dequeueReusableCellWithIdentifier:cellidentifire];
      if(cell==nil)
      {
          cell= [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellidentifire];
          cell.textLabel.text=@"budget name";
+         NSLog(@"suman");
+          NSLog(@"suman"); NSLog(@"suman");
+         
+         
          return cell;
+         
+         
      }
+     
+     
      return cell;
 
 //[NSString stringWithFormat:@"%d",a];
 
  }
-
-
 
 //- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 //{
