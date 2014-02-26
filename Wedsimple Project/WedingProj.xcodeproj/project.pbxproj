@@ -367,6 +367,7 @@
 		4509172D18B7743A0092245E /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
+				456ABACF18BDEFD30022C03E /* EditTask */,
 				4509172818B774360092245E /* TodolistViewController.h */,
 				4509172918B774360092245E /* TodolistViewController.m */,
 				4509172A18B774360092245E /* TodolistViewController.xib */,
@@ -429,6 +430,13 @@
 				456ABACC18BDD9090022C03E /* EditEventViewController.xib */,
 			);
 			name = EditEvent;
+			sourceTree = "<group>";
+		};
+		456ABACF18BDEFD30022C03E /* EditTask */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = EditTask;
 			sourceTree = "<group>";
 		};
 		4B1652BD18BB2DD4007A66A8 /* cell */ = {

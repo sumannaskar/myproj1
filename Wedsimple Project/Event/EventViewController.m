@@ -8,6 +8,7 @@
 
 #import "EventViewController.h"
 #import "AddEventViewController.h"
+#import "EditEventViewController.h"
 #define NIB_NAME @"Cell2"
 @interface EventViewController ()
 
@@ -141,6 +142,8 @@
 -(void) Edit:(UIButton*)button
 {
     NSLog(@"%ld",(long)button.tag);
+    EditEventViewController *EditeventVc=[[EditEventViewController alloc] init];
+    [self.navigationController pushViewController:EditeventVc animated:YES];
 }
 
 -(void)image
