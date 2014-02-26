@@ -193,7 +193,7 @@
 
 -(void)ViewDetails:(UIButton*)button
 {
-    NSLog(@"%d",button.tag);
+    NSLog(@"%ld",(long)button.tag);
 }
 - (void)didReceiveMemoryWarning
 {
