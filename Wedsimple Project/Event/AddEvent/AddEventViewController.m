@@ -31,22 +31,22 @@
     nametxt.delegate=self;
     budgettxt.delegate=self;
     venuetxt.delegate=self;
-    _datetxt.delegate=self;
-     _dateendtxt.delegate=self;
+    self.datetxt.delegate=self;
+     self.dateendtxt.delegate=self;
     
-    _datetxt.tag=1;
-    _dateendtxt.tag=2;
+    self.datetxt.tag=1;
+    self.dateendtxt.tag=2;
     
     
     scroll.contentSize=CGSizeMake(320, 500);
-    _pickerVw.dataSource=self;
-    _pickerVw.delegate=self;
-    _pickerVw.showsSelectionIndicator=YES;
-    [_dresscodetxt setInputView:_respondingView];
-    [_datetxt setInputView:_datepickerView];
-    [_dateendtxt setInputView:_datepickerView];
+    self.pickerVw.dataSource=self;
+    self.pickerVw.delegate=self;
+    self.pickerVw.showsSelectionIndicator=YES;
+    [self.dresscodetxt setInputView:self.respondingView];
+    [self.datetxt setInputView:self.datepickerView];
+    [self.dateendtxt setInputView:self.datepickerView];
     
-    [_datepickerVW setDate:[NSDate date]];
+    [self.datepickerVW setDate:[NSDate date]];
     
     pkarray=[[NSArray alloc]initWithObjects:@"Formal",@"Casual", nil];
     
@@ -61,13 +61,13 @@
 - (void)textFieldDidBeginEditing:(UITextField *)textField
 {
     if (textField.tag==1) {
-        _donedatebtn.tag=1;
-        _canceldatebtn.tag=1;
+        self.donedatebtn.tag=1;
+        self.canceldatebtn.tag=1;
         
     }
     if (textField.tag==2) {
-        _donedatebtn.tag=2;
-        _canceldatebtn.tag=2;
+        self.donedatebtn.tag=2;
+        self.canceldatebtn.tag=2;
     }
 }
 #pragma mark -
@@ -102,7 +102,7 @@
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
     
-     _dresscodetxt.text=[pkarray objectAtIndex:row];
+     self.dresscodetxt.text=[pkarray objectAtIndex:row];
 
     
 }
@@ -110,25 +110,25 @@
 - (IBAction)done:(id)sender
 {
     
-    if (!(_dresscodetxt.text.length>0)) {
+    if (!(self.dresscodetxt.text.length>0)) {
         //        mytxtfield.text=[stateList objectAtIndex:0];
         //        self.stateName=[stateList objectAtIndex:0];
         
-        _dresscodetxt.text=[pkarray objectAtIndex:0];
+        self.dresscodetxt.text=[pkarray objectAtIndex:0];
 //        addressdetailsText.text=[address objectAtIndex:0];
 //        loactionName=[location objectAtIndex:0];
     }
     
-    [_dresscodetxt resignFirstResponder];
+    [self.dresscodetxt resignFirstResponder];
 }
 - (IBAction)cancel:(UIBarButtonItem *)sender
 {
-    _dresscodetxt.text=@"";
+    self.dresscodetxt.text=@"";
     
     //addressdetailsText.text=@"";
     
     
-    [_dresscodetxt resignFirstResponder];
+    [self.dresscodetxt resignFirstResponder];
 }
 
 - (void)didReceiveMemoryWarning
@@ -140,32 +140,32 @@
 - (IBAction)donedate:(id)sender
 {
 
-    if (_donedatebtn.tag==1) {
-        _datetxt.text=[self formatDate:_datepickerVW.date];
+    if (self.donedatebtn.tag==1) {
+        self.datetxt.text=[self formatDate:self.datepickerVW.date];
         // _datetxt.text=[NSString stringWithFormat:@"%@",_datepickerVW.date];
         
-        [_datetxt resignFirstResponder];
+        [self.datetxt resignFirstResponder];
     }
     else
     {
     
-     _dateendtxt.text=[self formatDate:_datepickerVW.date];
-     [_dateendtxt resignFirstResponder];
+     self.dateendtxt.text=[self formatDate:self.datepickerVW.date];
+     [self.dateendtxt resignFirstResponder];
    // [_dateendtxt resignFirstResponder];
     }
 
 }
 - (IBAction)canceldate:(UIBarButtonItem *)sender
 {
-    if (_canceldatebtn.tag==1)
+    if (self.canceldatebtn.tag==1)
     {
-        _datetxt.text=@"";
-        [_datetxt resignFirstResponder];
+        self.datetxt.text=@"";
+        [self.datetxt resignFirstResponder];
     }
     else
     {
-        _dateendtxt.text=@"";
-        [_dateendtxt resignFirstResponder];
+        self.dateendtxt.text=@"";
+        [self.dateendtxt resignFirstResponder];
     }
    }
 - (NSString *)formatDate:(NSDate *)date
