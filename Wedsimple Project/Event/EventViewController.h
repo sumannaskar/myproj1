@@ -12,11 +12,25 @@
 
 @interface EventViewController : UIViewController<UIScrollViewDelegate,UIGestureRecognizerDelegate>
 {
+    
+    NSArray *raweventList;
+
     IBOutlet UITableView *EventTable;
     IBOutlet UIScrollView *EventScroll;
     Cell2 *cell;
     NSMutableArray *checkImage;
     BOOL isLoad;
+    
+    
+    
+    
+     NSString *eventnamestr;
+     NSString *startstr;
+     NSString *endstr;
+     NSString *dresscodestr;
+     NSString *venuestr;
+     NSString *budgetstr;
+    
 }
 
 - (IBAction)Add:(UIBarButtonItem *)sender;
