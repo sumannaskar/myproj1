@@ -10,6 +10,7 @@
 #import "Customcell.h"
 #import "DetailBudget.h"
 #import "DeleteBudget.h"
+#import "AddBudget.h"
 
 @interface ManageBudget ()
 
@@ -77,6 +78,8 @@
 
 - (IBAction)addBudget:(id)sender
 {
+    AddBudget *AddBudget_ = [[AddBudget alloc]init];
+    [self.navigationController pushViewController:AddBudget_ animated:YES];
     
 }
 - (IBAction)deleteBudget:(UIBarButtonItem *)sender
