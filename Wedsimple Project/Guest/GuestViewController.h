@@ -16,5 +16,7 @@
     NSMutableArray *checkImage;
     
 }
+- (IBAction)DeleteAction:(UIBarButtonItem *)sender;
+- (IBAction)AddAction:(UIBarButtonItem *)sender;
 
 @end

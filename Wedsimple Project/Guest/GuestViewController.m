@@ -7,7 +7,7 @@
 //
 
 #import "GuestViewController.h"
-
+#import "AddGuestViewController.h"
 #define NIB_NAME @"Cell"
 @interface GuestViewController ()
 
@@ -59,6 +59,8 @@
      UIButton *detailsButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
      detailsButton.frame = CGRectMake(0, 0, 72, 37);
      [detailsButton setTitle:@"Details" forState:UIControlStateNormal];
+     [detailsButton addTarget:self action:@selector(ViewDetails:) forControlEvents:UIControlEventTouchUpInside];
+     detailsButton.tag = indexPath.row;
      cell.accessoryType = UITableViewCellAccessoryNone;
      cell.accessoryView = detailsButton;
      return cell;
@@ -188,6 +190,11 @@
     
     
 }
+
+-(void)ViewDetails:(UIButton*)button
+{
+    NSLog(@"%d",button.tag);
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -232,4 +239,11 @@
 //}
 //
 //
+- (IBAction)DeleteAction:(UIBarButtonItem *)sender {
+}
+
+- (IBAction)AddAction:(UIBarButtonItem *)sender {
+    AddGuestViewController *AddguestVc=[[AddGuestViewController alloc] init];
+    [self.navigationController pushViewController:AddguestVc animated:YES];
+}
 @end

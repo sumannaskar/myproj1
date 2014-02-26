@@ -31,9 +31,17 @@
                     <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                     <items>
-                        <barButtonItem title="DELETE" width="89" id="Xuq-zJ-BQE"/>
+                        <barButtonItem title="DELETE" width="89" id="Xuq-zJ-BQE">
+                            <connections>
+                                <action selector="DeleteAction:" destination="-1" id="KK8-GZ-KrR"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem width="136" style="plain" systemItem="fixedSpace" id="kOU-Oz-64r"/>
-                        <barButtonItem title="ADD" width="57" id="bTQ-by-KtL"/>
+                        <barButtonItem title="ADD" width="57" id="bTQ-by-KtL">
+                            <connections>
+                                <action selector="AddAction:" destination="-1" id="wlv-m9-Bri"/>
+                            </connections>
+                        </barButtonItem>
                     </items>
                 </toolbar>
             </subviews>
