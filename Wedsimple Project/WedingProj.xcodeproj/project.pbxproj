@@ -64,10 +64,6 @@
 		7AE7B6A318BC7D8000D54692 /* Customcell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE7B69C18BC7D8000D54692 /* Customcell.xib */; };
 		7AE7B6A418BC7D8000D54692 /* ManageBudget.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE7B69E18BC7D8000D54692 /* ManageBudget.m */; };
 		7AE7B6A518BC7D8000D54692 /* ManageBudget.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE7B69F18BC7D8000D54692 /* ManageBudget.xib */; };
-		7AE7B6AA18BC9EEA00D54692 /* Budgetlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE7B6A818BC9EEA00D54692 /* Budgetlist.m */; };
-		7AE7B6AB18BC9EEA00D54692 /* Budgetlist.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE7B6A918BC9EEA00D54692 /* Budgetlist.xib */; };
-		7AE7B6AF18BCA35400D54692 /* BudgetlistCC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE7B6AE18BCA35400D54692 /* BudgetlistCC.m */; };
-		7AE7B6B118BCA36D00D54692 /* BudgetlistCC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE7B6B018BCA36D00D54692 /* BudgetlistCC.xib */; };
 		7AE7B6C618BCB71900D54692 /* AddTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE7B6C418BCB71900D54692 /* AddTaskViewController.m */; };
 		7AE7B6C718BCB71900D54692 /* AddTaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE7B6C518BCB71900D54692 /* AddTaskViewController.xib */; };
 		7AE7B6CF18BCB89600D54692 /* EventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE7B6CE18BCB89600D54692 /* EventViewController.xib */; };
@@ -83,6 +79,8 @@
 		7AFDB66318BDEEDF00CFE715 /* DeleteBudget.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AFDB66118BDEEDF00CFE715 /* DeleteBudget.xib */; };
 		7AFDB66718BDF08600CFE715 /* DeleteBudgetCC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFDB66618BDF08600CFE715 /* DeleteBudgetCC.m */; };
 		7AFDB66918BDF09C00CFE715 /* DeleteBudgetCC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AFDB66818BDF09C00CFE715 /* DeleteBudgetCC.xib */; };
+		7AFDB67118BE2A9400CFE715 /* AllBudget.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFDB66F18BE2A9400CFE715 /* AllBudget.m */; };
+		7AFDB67218BE2A9400CFE715 /* AllBudget.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AFDB67018BE2A9400CFE715 /* AllBudget.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -179,12 +177,6 @@
 		7AE7B69D18BC7D8000D54692 /* ManageBudget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManageBudget.h; sourceTree = "<group>"; };
 		7AE7B69E18BC7D8000D54692 /* ManageBudget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManageBudget.m; sourceTree = "<group>"; };
 		7AE7B69F18BC7D8000D54692 /* ManageBudget.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ManageBudget.xib; sourceTree = "<group>"; };
-		7AE7B6A718BC9EEA00D54692 /* Budgetlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Budgetlist.h; path = Budgetlist/Budgetlist.h; sourceTree = "<group>"; };
-		7AE7B6A818BC9EEA00D54692 /* Budgetlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Budgetlist.m; path = Budgetlist/Budgetlist.m; sourceTree = "<group>"; };
-		7AE7B6A918BC9EEA00D54692 /* Budgetlist.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Budgetlist.xib; path = Budgetlist/Budgetlist.xib; sourceTree = "<group>"; };
-		7AE7B6AD18BCA35400D54692 /* BudgetlistCC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BudgetlistCC.h; path = Budgetlist/BudgetlistCC/BudgetlistCC.h; sourceTree = "<group>"; };
-		7AE7B6AE18BCA35400D54692 /* BudgetlistCC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BudgetlistCC.m; path = Budgetlist/BudgetlistCC/BudgetlistCC.m; sourceTree = "<group>"; };
-		7AE7B6B018BCA36D00D54692 /* BudgetlistCC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BudgetlistCC.xib; path = Budgetlist/BudgetlistCC/BudgetlistCC.xib; sourceTree = "<group>"; };
 		7AE7B6C318BCB71900D54692 /* AddTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddTaskViewController.h; path = ToDoList/AddTask/AddTaskViewController.h; sourceTree = "<group>"; };
 		7AE7B6C418BCB71900D54692 /* AddTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddTaskViewController.m; path = ToDoList/AddTask/AddTaskViewController.m; sourceTree = "<group>"; };
 		7AE7B6C518BCB71900D54692 /* AddTaskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddTaskViewController.xib; path = ToDoList/AddTask/AddTaskViewController.xib; sourceTree = "<group>"; };
@@ -207,6 +199,9 @@
 		7AFDB66518BDF08600CFE715 /* DeleteBudgetCC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeleteBudgetCC.h; path = "Budget/Manage Budget/DeleteBudget/DeleteBudgetCC/DeleteBudgetCC.h"; sourceTree = "<group>"; };
 		7AFDB66618BDF08600CFE715 /* DeleteBudgetCC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeleteBudgetCC.m; path = "Budget/Manage Budget/DeleteBudget/DeleteBudgetCC/DeleteBudgetCC.m"; sourceTree = "<group>"; };
 		7AFDB66818BDF09C00CFE715 /* DeleteBudgetCC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DeleteBudgetCC.xib; path = "Budget/Manage Budget/DeleteBudget/DeleteBudgetCC/DeleteBudgetCC.xib"; sourceTree = "<group>"; };
+		7AFDB66E18BE2A9400CFE715 /* AllBudget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AllBudget.h; path = "Budget/Manage Budget/AllBudget/AllBudget.h"; sourceTree = "<group>"; };
+		7AFDB66F18BE2A9400CFE715 /* AllBudget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AllBudget.m; path = "Budget/Manage Budget/AllBudget/AllBudget.m"; sourceTree = "<group>"; };
+		7AFDB67018BE2A9400CFE715 /* AllBudget.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AllBudget.xib; path = "Budget/Manage Budget/AllBudget/AllBudget.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -398,6 +393,7 @@
 				4509172E18B774740092245E /* BudgetViewController.h */,
 				4509172F18B774740092245E /* BudgetViewController.m */,
 				4509173018B774740092245E /* BudgetViewController.xib */,
+				7AFDB66A18BE2A2600CFE715 /* AllBudget */,
 				7AFDB65E18BDEE9900CFE715 /* Delete Budget */,
 				7AFDB65818BDD6C300CFE715 /* Add Budget */,
 				7AE7B6FF18BCCCCB00D54692 /* Edit Budget */,
@@ -573,42 +569,21 @@
 				7AE7B69D18BC7D8000D54692 /* ManageBudget.h */,
 				7AE7B69E18BC7D8000D54692 /* ManageBudget.m */,
 				7AE7B69F18BC7D8000D54692 /* ManageBudget.xib */,
-				7AE7B6A618BC9DE600D54692 /* Budgetlist */,
-				7AE7B69918BC7D8000D54692 /* Customcell */,
+				7AE7B69918BC7D8000D54692 /* ManageBudgetCC */,
 			);
 			name = "Manage Budget";
 			path = "Budget/Manage Budget";
 			sourceTree = "<group>";
 		};
-		7AE7B69918BC7D8000D54692 /* Customcell */ = {
+		7AE7B69918BC7D8000D54692 /* ManageBudgetCC */ = {
 			isa = PBXGroup;
 			children = (
 				7AE7B69A18BC7D8000D54692 /* Customcell.h */,
 				7AE7B69B18BC7D8000D54692 /* Customcell.m */,
 				7AE7B69C18BC7D8000D54692 /* Customcell.xib */,
 			);
+			name = ManageBudgetCC;
 			path = Customcell;
-			sourceTree = "<group>";
-		};
-		7AE7B6A618BC9DE600D54692 /* Budgetlist */ = {
-			isa = PBXGroup;
-			children = (
-				7AE7B6A718BC9EEA00D54692 /* Budgetlist.h */,
-				7AE7B6A818BC9EEA00D54692 /* Budgetlist.m */,
-				7AE7B6A918BC9EEA00D54692 /* Budgetlist.xib */,
-				7AE7B6AC18BCA13500D54692 /* BudgetlistCC */,
-			);
-			name = Budgetlist;
-			sourceTree = "<group>";
-		};
-		7AE7B6AC18BCA13500D54692 /* BudgetlistCC */ = {
-			isa = PBXGroup;
-			children = (
-				7AE7B6AD18BCA35400D54692 /* BudgetlistCC.h */,
-				7AE7B6AE18BCA35400D54692 /* BudgetlistCC.m */,
-				7AE7B6B018BCA36D00D54692 /* BudgetlistCC.xib */,
-			);
-			name = BudgetlistCC;
 			sourceTree = "<group>";
 		};
 		7AE7B6C818BCB85D00D54692 /* AddEvent */ = {
@@ -671,6 +646,16 @@
 				7AFDB66818BDF09C00CFE715 /* DeleteBudgetCC.xib */,
 			);
 			name = DeleteBudgetCC;
+			sourceTree = "<group>";
+		};
+		7AFDB66A18BE2A2600CFE715 /* AllBudget */ = {
+			isa = PBXGroup;
+			children = (
+				7AFDB66E18BE2A9400CFE715 /* AllBudget.h */,
+				7AFDB66F18BE2A9400CFE715 /* AllBudget.m */,
+				7AFDB67018BE2A9400CFE715 /* AllBudget.xib */,
+			);
+			name = AllBudget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -752,7 +737,6 @@
 				4B1653A318BB4CAA007A66A8 /* index.jpg in Resources */,
 				456ABACE18BDD9090022C03E /* EditEventViewController.xib in Resources */,
 				4509170E18B76DFD0092245E /* LoginViewController.xib in Resources */,
-				7AE7B6AB18BC9EEA00D54692 /* Budgetlist.xib in Resources */,
 				4509173218B774740092245E /* BudgetViewController.xib in Resources */,
 				7AE7B6CF18BCB89600D54692 /* EventViewController.xib in Resources */,
 				4509173818B7749D0092245E /* VendorViewController.xib in Resources */,
@@ -761,6 +745,7 @@
 				4B1653A418BB4CAA007A66A8 /* index2.jpg in Resources */,
 				7AE7B70418BCCD0F00D54692 /* EditBudget.xib in Resources */,
 				4B16539418BB4B6B007A66A8 /* SelectViewController.xib in Resources */,
+				7AFDB67218BE2A9400CFE715 /* AllBudget.xib in Resources */,
 				7AFDB66318BDEEDF00CFE715 /* DeleteBudget.xib in Resources */,
 				4BDA2E8118BDD79E00C17E43 /* AddGuestViewController.xib in Resources */,
 				7AFDB66918BDF09C00CFE715 /* DeleteBudgetCC.xib in Resources */,
@@ -771,7 +756,6 @@
 				456ABAD418BDF07E0022C03E /* EditTaskViewController.xib in Resources */,
 				4509171418B770AA0092245E /* HomeViewController.xib in Resources */,
 				4B1653BE18BB6766007A66A8 /* Cell3.xib in Resources */,
-				7AE7B6B118BCA36D00D54692 /* BudgetlistCC.xib in Resources */,
 				4B1653AA18BB5192007A66A8 /* SendIndividuallyViewController.xib in Resources */,
 				4B16537618BB483E007A66A8 /* InvViewController.xib in Resources */,
 				7AE7B6C718BCB71900D54692 /* AddTaskViewController.xib in Resources */,
@@ -827,12 +811,11 @@
 				4509171318B770AA0092245E /* HomeViewController.m in Sources */,
 				4509170818B767760092245E /* WelcomeViewController.m in Sources */,
 				4509173718B7749D0092245E /* VendorViewController.m in Sources */,
+				7AFDB67118BE2A9400CFE715 /* AllBudget.m in Sources */,
 				4B16537518BB483E007A66A8 /* InvViewController.m in Sources */,
 				4509173118B774740092245E /* BudgetViewController.m in Sources */,
-				7AE7B6AA18BC9EEA00D54692 /* Budgetlist.m in Sources */,
 				4B1653A918BB5192007A66A8 /* SendIndividuallyViewController.m in Sources */,
 				7AFDB65C18BDD76F00CFE715 /* AddBudget.m in Sources */,
-				7AE7B6AF18BCA35400D54692 /* BudgetlistCC.m in Sources */,
 				7AFDB66718BDF08600CFE715 /* DeleteBudgetCC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

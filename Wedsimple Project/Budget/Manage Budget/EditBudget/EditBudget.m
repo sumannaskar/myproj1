@@ -31,6 +31,7 @@
     [vendernametext setInputView:respondingView];
     pkarray=[[NSArray alloc]initWithObjects:@"A",@"B", nil];
     [datepickerVW setDate:[NSDate date]];
+    
 }
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     

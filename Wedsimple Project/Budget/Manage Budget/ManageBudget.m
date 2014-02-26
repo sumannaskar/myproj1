@@ -8,9 +8,8 @@
 
 #import "ManageBudget.h"
 #import "Customcell.h"
-#import "DetailBudget.h"
-#import "DeleteBudget.h"
-#import "AddBudget.h"
+#import "AllBudget.h"
+
 
 @interface ManageBudget ()
 
@@ -71,21 +70,11 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    DetailBudget *DetailBudget_ =[[DetailBudget alloc]init];
-    [self.navigationController pushViewController:DetailBudget_ animated:YES];
+    AllBudget *AllBudget_ =[[AllBudget alloc]init];
+    [self.navigationController pushViewController:AllBudget_ animated:YES];
     
 }
 
-- (IBAction)addBudget:(id)sender
-{
-    AddBudget *AddBudget_ = [[AddBudget alloc]init];
-    [self.navigationController pushViewController:AddBudget_ animated:YES];
-    
-}
-- (IBAction)deleteBudget:(UIBarButtonItem *)sender
-{
-    DeleteBudget *DeleteBudget_ = [[DeleteBudget alloc]init];
-    [self.navigationController pushViewController:DeleteBudget_ animated:YES];
-}
+
 
 @end

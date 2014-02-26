@@ -13,6 +13,5 @@
     IBOutlet UIImageView *backgroung;
     IBOutlet UITableView *manageTable;
 }
-- (IBAction)addBudget:(id)sender;
-- (IBAction)deleteBudget:(UIBarButtonItem *)sender;
+
 @end
