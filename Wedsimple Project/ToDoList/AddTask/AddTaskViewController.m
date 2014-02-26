@@ -37,11 +37,11 @@
     self.pickerVw.dataSource=self;
     self.pickerVw.delegate=self;
     self.pickerVw.showsSelectionIndicator=YES;
-    [self.datetxt setInputView:_datepickerView];
-    [self.categorytxt setInputView:_respondingView];
-    [self.eventtxt setInputView:_respondingView];
-    [self.vendortxt setInputView:_respondingView];
-    [self.statustxt setInputView:_respondingView];
+    [self.datetxt setInputView:self.datepickerView];
+    [self.categorytxt setInputView:self.respondingView];
+    [self.eventtxt setInputView:self.respondingView];
+    [self.vendortxt setInputView:self.respondingView];
+    [self.statustxt setInputView:self.respondingView];
     self.categorytxt.tag=1;
     self.eventtxt.tag=2;
     self.vendortxt.tag=3;
@@ -54,7 +54,7 @@
     
     eventarray=[[NSArray alloc]initWithObjects:@"Event1",@"Event2",@"Event3",@"Event4",@"Event5",@"Event6", nil];
     
-    vendorarray=[[NSArray alloc]initWithObjects:@"Vendor1",@"Vendor2",@"Vendor3",@"Vendor4",@"Vendor5",@"Vendor6", nil];
+    vendorarray=[[NSArray alloc]initWithObjects:@"Vendor1",@"Vendor2",@"Vendor3",@"Vendor4",@"Vendor5", nil];
     
     statusarray=[[NSArray alloc]initWithObjects:@"NO",@"YES", nil];
 }
@@ -62,24 +62,32 @@
 - (void)textFieldDidBeginEditing:(UITextField *)textField
 {
     if (textField.tag==1) {
+        
         self.pickerVw.tag=1;
         self.donebtn.tag=1;
         self.cancelbtn.tag=1;
+        [self.pickerVw reloadAllComponents];
+        
     }
     if (textField.tag==2) {
         self.pickerVw.tag=2;
         self.donebtn.tag=2;
         self.cancelbtn.tag=2;
+        [self.pickerVw reloadAllComponents];
     }
     if (textField.tag==3) {
+       
         self.pickerVw.tag=3;
         self.donebtn.tag=3;
         self.cancelbtn.tag=3;
+        [self.pickerVw reloadAllComponents];
     }
     if (textField.tag==4) {
+        
         self.pickerVw.tag=4;
         self.donebtn.tag=4;
         self.cancelbtn.tag=4;
+        [self.pickerVw reloadAllComponents];
     }
 
 }
@@ -96,7 +104,7 @@
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
-   // NSInteger rowCount;
+       
     if (self.pickerVw.tag==1) {
         //rowCount=[pkarray count];
         return [pkarray count];
@@ -112,7 +120,7 @@
     if (self.pickerVw.tag ==4) {
         return [statusarray count];
     }
-    return 0;
+   return 0;
     
 }
 
@@ -148,6 +156,7 @@
 
     if (self.pickerVw.tag==1) {
         self.categorytxt.text=[pkarray objectAtIndex:row];
+       
     }
     
     

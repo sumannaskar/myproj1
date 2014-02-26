@@ -343,7 +343,6 @@
 				7AE7B6CE18BCB89600D54692 /* EventViewController.xib */,
 				7AE7B6C818BCB85D00D54692 /* AddEvent */,
 				451EE6B118BB53AB0098FC96 /* Cell */,
-				451EE69218BB222A0098FC96 /* Add Event */,
 			);
 			name = Event;
 			sourceTree = "<group>";
@@ -382,13 +381,6 @@
 				4509173618B7749D0092245E /* VendorViewController.xib */,
 			);
 			name = Vendor;
-			sourceTree = "<group>";
-		};
-		451EE69218BB222A0098FC96 /* Add Event */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Add Event";
 			sourceTree = "<group>";
 		};
 		451EE69818BB27870098FC96 /* Add Task */ = {
