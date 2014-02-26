@@ -280,6 +280,7 @@
     EditguestVc.groupString = [GroupId objectAtIndex:button.tag];
     EditguestVc.withString = [NoOfPerson objectAtIndex:button.tag];
     [self.navigationController pushViewController:EditguestVc animated:YES];
+
 }
 - (void)didReceiveMemoryWarning
 {

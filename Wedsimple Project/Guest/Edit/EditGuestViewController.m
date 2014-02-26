@@ -8,7 +8,7 @@
 
 #import "EditGuestViewController.h"
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
-#define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=guest_all&event_id=3&apikey=micronix_10_2014_wedsimple_proj"]
+#define URL [NSURL URLWithString:@"http://marketingplatform.ca/wedsimple_project/admin/api.php?request=groups&apikey=micronix_10_2014_wedsimple_proj"]
 @interface EditGuestViewController ()
 
 @end
@@ -29,11 +29,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     json = [[NSMutableArray alloc]init];
+    GroupArray = [[NSMutableArray alloc]init];
     
      nametxt.text = self.nameString;
      self.RoleText.text = self.roleString;
      self.EmailText.text = self.emailString;
-     self.GroupText.text = self.groupString;
+    // self.GroupText.text = self.groupString;
      self.WithText.text = self.withString;
     
     nametxt.delegate=self;
@@ -101,12 +102,24 @@
     // NSLog(@"%@",[json valueForKey:@"status"]);
     
     // [HUD hideUIBlockingIndicator];
-    
-    for(NSString *loc in [json valueForKey:@"guest_id"]) {
-        NSLog(@"%@",loc);
+    for(NSString *loc in [json valueForKey:@"group_name"]) {
+        
         [GroupArray addObject:loc];
+        
     }
     
+    for(NSString *loc in [json valueForKey:@"id"]) {
+        int i=0;
+        if ([loc isEqualToString:self.groupString]) {
+            self.GroupText.text = [GroupArray objectAtIndex:i];
+            break;
+        }
+        i = i+1;
+    }
+    
+   
+    [self.pickerVw reloadAllComponents];
+    // NSLog(@"%@",GroupArray);
 }
 
 - (void)didReceiveMemoryWarning

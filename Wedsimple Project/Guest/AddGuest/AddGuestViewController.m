@@ -28,6 +28,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     nametxt.delegate=self;
+    informationtxt.delegate=self;
     self.RoleText.delegate=self;
     self.EmailText.delegate=self;
     self.GroupText.delegate=self;
@@ -122,7 +123,7 @@
 {
     
     
-    // return [location objectAtIndex:row];
+    
     if (self.pickerVw.tag==1) {
         return [GroupArray objectAtIndex:row];
     }
@@ -218,6 +219,11 @@
     
     [textField resignFirstResponder];
     
+    return YES;
+}
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text
+{
+    [textView resignFirstResponder];
     return YES;
 }
 

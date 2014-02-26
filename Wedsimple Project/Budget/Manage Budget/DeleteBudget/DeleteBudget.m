@@ -39,6 +39,8 @@
 }
 -(IBAction)Delete:(UIBarButtonItem *)sender
 {
+    
+    
 //    AddTaskViewController *AddeventVc=[[AddTaskViewController alloc] init];
 //    [self.navigationController pushViewController:AddeventVc animated:YES];
 }
@@ -86,10 +88,6 @@
     
     cell.EventLbl.text = [NSString stringWithFormat:@"%ld",(long)indexPath.row];
     
-//    
-//    [cell.editBtn addTarget:self action:@selector(Edit:) forControlEvents:UIControlEventTouchUpInside];
-//    cell.editBtn.tag = indexPath.row;
-    
     return cell;
 }
 
@@ -111,20 +109,20 @@
     {
         if ([[UIScreen mainScreen] bounds].size.height == 568)
         {
-            int tableRowheight = 100*50;
+            int tableRowheight = 50*44;
             deletetable.frame=CGRectMake(0, 0, 320, tableRowheight*2);
             scrolvw.contentSize = CGSizeMake(320, tableRowheight);
         }
         else if ([[UIScreen mainScreen] bounds].size.height == 480)
         {
-            int tableRowheight = 100*50;
+            int tableRowheight = 50*44;
             deletetable.frame=CGRectMake(0, 0, 320, tableRowheight*2);
             scrolvw.contentSize = CGSizeMake(320, tableRowheight);
             
         }
         else
         {
-            int tableRowheight = 100*50;
+            int tableRowheight = 50*44;
             deletetable.frame=CGRectMake(0, 0, 320, tableRowheight*2);
             scrolvw.contentSize = CGSizeMake(320, tableRowheight);
         }
@@ -134,7 +132,7 @@
     else
     {
         //[bgimgv setImage:[UIImage imageNamed:@"640-1136-inner.png"]];
-        int tableRowheight = 100*50;
+        int tableRowheight = 50*50;
         deletetable.frame=CGRectMake(0, 0, 320, tableRowheight*2);
         scrolvw.contentSize = CGSizeMake(320, tableRowheight);
         
