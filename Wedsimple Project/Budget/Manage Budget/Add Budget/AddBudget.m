@@ -58,11 +58,8 @@
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
-    if (pickerView) {
+   
         return [pkarray count];
-    }
-    
-    return 0;
 }
 
 
@@ -70,15 +67,8 @@
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 
 {
-    // return [location objectAtIndex:row];
-    if (pickerView) {
         return [pkarray objectAtIndex:row];
-    }
-    
-    else
-    {
-        return [pkarray objectAtIndex:row];
-    }
+
 }
 
 
