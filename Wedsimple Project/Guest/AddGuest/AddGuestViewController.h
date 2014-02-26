@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AddGuestViewController : UIViewController<UIPickerViewDataSource,UIPickerViewDelegate,UITextFieldDelegate>
+@interface AddGuestViewController : UIViewController<UIPickerViewDataSource,UIPickerViewDelegate,UITextFieldDelegate,UITextViewDelegate>
 {
     
     NSArray *GroupArray;
