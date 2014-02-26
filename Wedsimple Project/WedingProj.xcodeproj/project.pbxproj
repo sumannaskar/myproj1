@@ -38,6 +38,8 @@
 		451EE6B618BB545C0098FC96 /* Cell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 451EE6B518BB545C0098FC96 /* Cell2.xib */; };
 		456ABACD18BDD9090022C03E /* EditEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 456ABACB18BDD9090022C03E /* EditEventViewController.m */; };
 		456ABACE18BDD9090022C03E /* EditEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 456ABACC18BDD9090022C03E /* EditEventViewController.xib */; };
+		456ABAD318BDF07E0022C03E /* EditTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 456ABAD118BDF07E0022C03E /* EditTaskViewController.m */; };
+		456ABAD418BDF07E0022C03E /* EditTaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 456ABAD218BDF07E0022C03E /* EditTaskViewController.xib */; };
 		4B16537518BB483E007A66A8 /* InvViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B16537318BB483D007A66A8 /* InvViewController.m */; };
 		4B16537618BB483E007A66A8 /* InvViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B16537418BB483D007A66A8 /* InvViewController.xib */; };
 		4B16539318BB4B6B007A66A8 /* SelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B16539118BB4B6B007A66A8 /* SelectViewController.m */; };
@@ -139,6 +141,9 @@
 		456ABACA18BDD9090022C03E /* EditEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditEventViewController.h; path = Event/EditEvent/EditEventViewController.h; sourceTree = "<group>"; };
 		456ABACB18BDD9090022C03E /* EditEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditEventViewController.m; path = Event/EditEvent/EditEventViewController.m; sourceTree = "<group>"; };
 		456ABACC18BDD9090022C03E /* EditEventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EditEventViewController.xib; path = Event/EditEvent/EditEventViewController.xib; sourceTree = "<group>"; };
+		456ABAD018BDF07E0022C03E /* EditTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditTaskViewController.h; path = ToDoList/EditTask/EditTaskViewController.h; sourceTree = "<group>"; };
+		456ABAD118BDF07E0022C03E /* EditTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditTaskViewController.m; path = ToDoList/EditTask/EditTaskViewController.m; sourceTree = "<group>"; };
+		456ABAD218BDF07E0022C03E /* EditTaskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EditTaskViewController.xib; path = ToDoList/EditTask/EditTaskViewController.xib; sourceTree = "<group>"; };
 		4B16537218BB483D007A66A8 /* InvViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InvViewController.h; path = Invitation/InvViewController.h; sourceTree = "<group>"; };
 		4B16537318BB483D007A66A8 /* InvViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InvViewController.m; path = Invitation/InvViewController.m; sourceTree = "<group>"; };
 		4B16537418BB483D007A66A8 /* InvViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = InvViewController.xib; path = Invitation/InvViewController.xib; sourceTree = "<group>"; };
@@ -446,6 +451,9 @@
 		456ABACF18BDEFD30022C03E /* EditTask */ = {
 			isa = PBXGroup;
 			children = (
+				456ABAD018BDF07E0022C03E /* EditTaskViewController.h */,
+				456ABAD118BDF07E0022C03E /* EditTaskViewController.m */,
+				456ABAD218BDF07E0022C03E /* EditTaskViewController.xib */,
 			);
 			name = EditTask;
 			sourceTree = "<group>";
@@ -760,6 +768,7 @@
 				7AE7B6A118BC7D8000D54692 /* CalculateBudget.xib in Resources */,
 				4509172C18B774360092245E /* TodolistViewController.xib in Resources */,
 				4B16539E18BB4C1A007A66A8 /* Cell.xib in Resources */,
+				456ABAD418BDF07E0022C03E /* EditTaskViewController.xib in Resources */,
 				4509171418B770AA0092245E /* HomeViewController.xib in Resources */,
 				4B1653BE18BB6766007A66A8 /* Cell3.xib in Resources */,
 				7AE7B6B118BCA36D00D54692 /* BudgetlistCC.xib in Resources */,
@@ -797,6 +806,7 @@
 				4B16539318BB4B6B007A66A8 /* SelectViewController.m in Sources */,
 				456ABACD18BDD9090022C03E /* EditEventViewController.m in Sources */,
 				4B16539D18BB4C1A007A66A8 /* Cell.m in Sources */,
+				456ABAD318BDF07E0022C03E /* EditTaskViewController.m in Sources */,
 				4509170D18B76DFD0092245E /* LoginViewController.m in Sources */,
 				4BDA2E8018BDD79E00C17E43 /* AddGuestViewController.m in Sources */,
 				4509172518B774090092245E /* EventViewController.m in Sources */,

@@ -8,6 +8,7 @@
 
 #import "TodolistViewController.h"
 #import "AddTaskViewController.h"
+#import "EditTaskViewController.h"
 #define NIB_NAME @"Cell3"
 @interface TodolistViewController ()
 
@@ -141,6 +142,8 @@
 -(void) Edit:(UIButton*)button
 {
     NSLog(@"%ld",(long)button.tag);
+    EditTaskViewController *EditTaskVc=[[EditTaskViewController alloc] init];
+    [self.navigationController pushViewController:EditTaskVc animated:YES];
 }
 
 -(void)image
