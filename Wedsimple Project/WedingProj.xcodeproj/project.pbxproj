@@ -338,6 +338,10 @@
 		4509172718B7740F0092245E /* Event */ = {
 			isa = PBXGroup;
 			children = (
+				4509172218B774090092245E /* EventViewController.h */,
+				4509172318B774090092245E /* EventViewController.m */,
+				7AE7B6CE18BCB89600D54692 /* EventViewController.xib */,
+				7AE7B6C818BCB85D00D54692 /* AddEvent */,
 				451EE6B118BB53AB0098FC96 /* Cell */,
 				451EE69218BB222A0098FC96 /* Add Event */,
 			);
@@ -383,10 +387,6 @@
 		451EE69218BB222A0098FC96 /* Add Event */ = {
 			isa = PBXGroup;
 			children = (
-				4509172218B774090092245E /* EventViewController.h */,
-				4509172318B774090092245E /* EventViewController.m */,
-				7AE7B6CE18BCB89600D54692 /* EventViewController.xib */,
-				7AE7B6C818BCB85D00D54692 /* AddEvent */,
 			);
 			name = "Add Event";
 			sourceTree = "<group>";
